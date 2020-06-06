@@ -4,7 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7772,3 +7772,21 @@ body {
     letter-spacing: 0.56px;
     line-height: 35px;
     text-transform: uppercase; }
+
+#main-block #welcome {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 1.4px;
+  line-height: 40px;
+  color: #232323; }
+
+#main-block h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 63px;
+  color: #232323; }
+
+#main-block .welcome-image-placeholder {
+  width: 100%; }
+  #main-block .welcome-image-placeholder img {
+    width: 100%; }

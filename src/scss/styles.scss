@@ -17,7 +17,7 @@ $container-max-widths: (
 $main-button-color: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
 
 @import "node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -100,5 +100,28 @@ body {
     letter-spacing: 0.56px;
     line-height: 35px;
     text-transform: uppercase;
+  }
+}
+
+#main-block {
+  #welcome{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    line-height: 40px;
+    color: #232323;
+  }
+  h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 63px;
+    color: #232323;
+  }
+
+  .welcome-image-placeholder {
+    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 }
