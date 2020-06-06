@@ -1,0 +1,19 @@
+$theme-colors: (
+        "primary": #FF69B4
+);
+
+$container-max-widths: (
+        md: 200px
+);
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  color: grey;
+  background: yellow;
+  height: 400vh;
+}
+.container{
+    background: black;
+    height: 100px;
+}
+
