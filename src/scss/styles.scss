@@ -1,9 +1,24 @@
 $theme-colors: ("primary": #FF69B4);
-$container-max-widths: (md: 200px);
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1920px
+);
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1432px
+);
 $main-button-color: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 body {
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -24,9 +39,11 @@ body {
     justify-content: space-between;
 
     #main-header-logo {
-      #header-logo-img {
+      display: flex;
+      align-items: center;
 
-        width: 117.68px;
+      #header-logo-img {
+        width: 126.17px;
       }
     }
 
@@ -54,8 +71,8 @@ body {
       }
 
       .login-button {
+        height: 36px;
         margin-right: 9px;
-        border: 1px solid $main-button-color;
         background-image: $main-button-color;
       }
 
@@ -63,5 +80,25 @@ body {
         border: 1px solid #fff;
       }
     }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 4px;
+  background-image: $main-button-color;
+  margin-bottom: 15px;
+}
+
+#currency {
+  margin-bottom: 15px;
+
+  span {
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.56px;
+    line-height: 35px;
+    text-transform: uppercase;
   }
 }
