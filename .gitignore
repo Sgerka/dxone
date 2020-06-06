@@ -4,3 +4,5 @@
 /.idea/modules.xml
 /.idea/vcs.xml
 /node_modules/
+/.idea/$CACHE_FILE$
+/.idea/inspectionProfiles/profiles_settings.xml

@@ -4,6 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7141,10 +7142,44 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  color: grey;
-  background: green;
-  height: 400vh; }
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0; }
 
-.container {
-  background: black;
-  height: 100px; }
+#main-header {
+  width: 100%;
+  height: 62px;
+  background-image: linear-gradient(269deg, #1c1c1c 0%, #2d2d2d 100%);
+  display: flex;
+  align-items: center; }
+  #main-header #main-header-nav {
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    #main-header #main-header-nav #main-header-logo #header-logo-img {
+      width: 117.68px; }
+    #main-header #main-header-nav #main-header-buttons {
+      display: flex;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.49px;
+      line-height: 19px; }
+      #main-header #main-header-nav #main-header-buttons .header-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 34px;
+        width: 122px;
+        color: #fff;
+        text-transform: uppercase; }
+      #main-header #main-header-nav #main-header-buttons a:hover {
+        color: #fff;
+        text-decoration: none; }
+      #main-header #main-header-nav #main-header-buttons .login-button {
+        margin-right: 9px;
+        border: 1px solid linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
+        background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+      #main-header #main-header-nav #main-header-buttons .register-button {
+        border: 1px solid #fff; }

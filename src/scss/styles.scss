@@ -1,13 +1,67 @@
-$theme-colors: ( "primary": #FF69B4);
-$container-max-widths: ( md: 200px);
+$theme-colors: ("primary": #FF69B4);
+$container-max-widths: (md: 200px);
+$main-button-color: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
+
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 body {
-    color: grey;
-    background: green;
-    height: 400vh;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.container {
-    background: black;
-    height: 100px;
+#main-header {
+  width: 100%;
+  height: 62px;
+  background-image: linear-gradient(269deg, #1c1c1c 0%, #2d2d2d 100%);
+  display: flex;
+  align-items: center;
+
+  #main-header-nav {
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    #main-header-logo {
+      #header-logo-img {
+
+        width: 117.68px;
+      }
+    }
+
+    #main-header-buttons {
+      display: flex;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.49px;
+      line-height: 19px;
+
+      .header-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 34px;
+        width: 122px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .login-button {
+        margin-right: 9px;
+        border: 1px solid $main-button-color;
+        background-image: $main-button-color;
+      }
+
+      .register-button {
+        border: 1px solid #fff;
+      }
+    }
+  }
 }
