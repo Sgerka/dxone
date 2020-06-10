@@ -8147,6 +8147,11 @@ footer {
   text-transform: uppercase;
   color: #fff;
   background-color: #292929; }
+  footer .footer-menu-link {
+    text-decoration: none;
+    color: #fff; }
+    footer .footer-menu-link:hover {
+      text-decoration: none; }
   footer .social-footer .social-light-links {
     padding-right: 5px; }
   footer .footer-logo {
@@ -8188,7 +8193,8 @@ footer {
   h4 {
     font-size: 18px; }
   p {
-    font-size: 12px; }
+    font-size: 12px;
+    text-align: justify; }
   #main-block #welcome-block .wraper-block-first {
     height: 100%;
     padding-left: 20px;
@@ -8382,9 +8388,17 @@ footer {
           background-color: #292929;
           border: 1px solid #292929;
           font-size: 16px; }
+  footer .footer-menu-link {
+    text-decoration: none;
+    color: #fff; }
+    footer .footer-menu-link:hover {
+      text-decoration: none; }
   footer .social-footer-mobile {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 15px; }
+    footer .social-footer-mobile p {
+      text-align: center; }
   footer .footer-logo p {
-    font-size: 12px; } }
+    font-size: 12px;
+    text-align: center; } }
