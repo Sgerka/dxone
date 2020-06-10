@@ -6,7 +6,7 @@ $dark-bg-color: #fff;
 $dark-bg-background: #000;
 $dark-bg-padding: 3px 5px 3px 10px;
 $light-bg-background: #f5f5f5;
-$light-bg-padding: 3px 10px 3px 5px;
+$light-bg-padding: 3px 0px 3px 5px;
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 body {
@@ -253,7 +253,7 @@ p {
         }
     } //blolck-second
     .wraper-graphs {
-        margin-bottom: 190px;
+        margin-bottom: 140px;
         .main-features-background {
             width: 100%;
             background: #fafafa;
@@ -369,6 +369,7 @@ p {
         box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.1);
         padding-left: 58px;
         padding-right: 58px;
+        padding-top: 50px;
         padding-bottom: 41px;
         .customers {
             h3 {
@@ -471,7 +472,7 @@ p {
             padding-top: 60px;
             padding-bottom: 40px;
             .feedback-description {
-                width: 80%;
+                width: 90%;
                 margin: 0 auto;
                 color: #fbfbfb;
                 text-align: center;
@@ -648,7 +649,7 @@ footer {
                 }
                 .block-first {
                     height: 100%;
-                    padding-top: 50px;
+                    padding-top: 30px;
                     #welcome {
                         font-size: 24px;
                     }
@@ -783,11 +784,11 @@ footer {
                     display: none;
                 }
             }
+            lottie-player {
+                display: none;
+            }
             hr {
-                height: 2px;
-                background-color: #f8f8f8;
-                margin-top: 25px;
-                margin-bottom: 20px;
+                display: none;
             }
             .customers-windows-description {
                 h4 {
@@ -897,6 +898,18 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+    footer {
+        .social-footer-mobile {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+        .footer-logo {
+            p {
+                font-size: 12px;
             }
         }
     }

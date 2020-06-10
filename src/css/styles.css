@@ -7890,7 +7890,7 @@ p {
       padding: 3px 5px 3px 10px; }
     #main-block .block-second .description h3 .light-bg {
       background: #f5f5f5;
-      padding: 3px 10px 3px 5px; }
+      padding: 3px 0px 3px 5px; }
   #main-block .block-second .description .description-info {
     margin-bottom: 40px; }
     #main-block .block-second .description .description-info h2 {
@@ -7908,7 +7908,7 @@ p {
       text-decoration: none; }
 
 #main-block .wraper-graphs {
-  margin-bottom: 190px; }
+  margin-bottom: 140px; }
   #main-block .wraper-graphs .main-features-background {
     width: 100%;
     background: #fafafa;
@@ -7924,7 +7924,7 @@ p {
           padding: 3px 5px 3px 10px; }
         #main-block .wraper-graphs .main-features-background .block-third .main-features h3 .light-bg {
           background: #f5f5f5;
-          padding: 3px 10px 3px 5px; }
+          padding: 3px 0px 3px 5px; }
       #main-block .wraper-graphs .main-features-background .block-third .main-features-description h2 {
         border-left: 3px solid #000;
         padding-left: 50px;
@@ -7997,6 +7997,7 @@ p {
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.1);
   padding-left: 58px;
   padding-right: 58px;
+  padding-top: 50px;
   padding-bottom: 41px; }
   #main-block .block-customer .customers h3 {
     padding-top: 3px;
@@ -8019,7 +8020,7 @@ p {
       padding: 3px 5px 3px 10px; }
     #main-block .block-customer .customers h3 .light-bg {
       background: #f5f5f5;
-      padding: 3px 10px 3px 5px; }
+      padding: 3px 0px 3px 5px; }
   #main-block .block-customer hr {
     height: 2px;
     background-color: #f8f8f8;
@@ -8080,7 +8081,7 @@ p {
     padding-top: 60px;
     padding-bottom: 40px; }
     #main-block .wraper-block-feedback .block-feedback .feedback-description {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       color: #fbfbfb;
       text-align: center; }
@@ -8204,7 +8205,7 @@ footer {
         text-transform: uppercase; }
     #main-block #welcome-block .wraper-block-first .block-first {
       height: 100%;
-      padding-top: 50px; }
+      padding-top: 30px; }
       #main-block #welcome-block .wraper-block-first .block-first #welcome {
         font-size: 24px; }
       #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons {
@@ -8298,11 +8299,10 @@ footer {
         display: none; }
     #main-block .block-customer .customers h2 {
       display: none; }
+    #main-block .block-customer lottie-player {
+      display: none; }
     #main-block .block-customer hr {
-      height: 2px;
-      background-color: #f8f8f8;
-      margin-top: 25px;
-      margin-bottom: 20px; }
+      display: none; }
     #main-block .block-customer .customers-windows-description h4 {
       color: #292929;
       text-align: center;
@@ -8381,4 +8381,10 @@ footer {
         #main-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
           background-color: #292929;
           border: 1px solid #292929;
-          font-size: 16px; } }
+          font-size: 16px; }
+  footer .social-footer-mobile {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px; }
+  footer .footer-logo p {
+    font-size: 12px; } }
