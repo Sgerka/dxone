@@ -239,6 +239,7 @@
                     p {
                         color: #000000;
                         font-weight: 400;
+                        text-align: justify;
                     }
                 }
                 .register-link {
@@ -913,8 +914,12 @@
             .footer-menu-link {
                 text-decoration: none;
                 color: #fff;
+                text-align-last: left;
                 &:hover {
                     text-decoration: none;
+                }
+                p {
+                    text-align-last: left;
                 }
             }
             .social-footer-mobile {

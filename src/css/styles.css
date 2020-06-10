@@ -7898,7 +7898,8 @@ p {
       margin-bottom: 40px; }
     #main-block .block-second .description .description-info p {
       color: #000000;
-      font-weight: 400; }
+      font-weight: 400;
+      text-align: justify; }
   #main-block .block-second .description .register-link {
     width: 100%;
     display: block;
@@ -8390,9 +8391,12 @@ footer {
           font-size: 16px; }
   footer .footer-menu-link {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    text-align-last: left; }
     footer .footer-menu-link:hover {
       text-decoration: none; }
+    footer .footer-menu-link p {
+      text-align-last: left; }
   footer .social-footer-mobile {
     text-align: center;
     padding-top: 20px;
