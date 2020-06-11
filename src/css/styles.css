@@ -7785,6 +7785,8 @@ p {
 
 #main-block #welcome-block .wraper-block-first {
   margin-bottom: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(251, 251, 251, 0.95);
   background-image: url("../img/cutting-edge-line.svg");
   background-repeat: no-repeat;
   background-size: 163%;
@@ -7803,10 +7805,11 @@ p {
     height: 100%;
     padding-top: 50px; }
     #main-block #welcome-block .wraper-block-first .block-first #welcome {
+      display: block;
       font-size: 32px;
       font-weight: 300;
       letter-spacing: 1.4px;
-      margin-bottom: 40px;
+      padding-bottom: 20px;
       color: #232323; }
     #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons {
       display: flex;
@@ -7821,12 +7824,11 @@ p {
         align-items: center;
         text-decoration: none;
         height: 50px;
-        width: 230px;
+        width: 200px;
         text-transform: uppercase; }
       #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons a:hover {
         text-decoration: none; }
       #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .get-started-button {
-        height: 50px;
         color: #fff;
         margin-right: 9px;
         background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
@@ -7834,7 +7836,9 @@ p {
         color: #252525;
         border: 1px solid #252525; }
     #main-block #welcome-block .wraper-block-first .block-first h1 {
+      max-width: 450px;
       font-weight: 700;
+      line-height: 63px;
       color: #232323;
       margin-bottom: 50px;
       text-transform: uppercase; }
@@ -7843,6 +7847,7 @@ p {
       #main-block #welcome-block .wraper-block-first .block-first .welcome-image-placeholder img {
         width: 100%; }
     #main-block #welcome-block .wraper-block-first .block-first .social {
+      position: relative;
       padding-bottom: 20px; }
       #main-block #welcome-block .wraper-block-first .block-first .social:after {
         content: '';
@@ -7861,8 +7866,8 @@ p {
 #main-block .block-second {
   height: 100%;
   margin-bottom: 100px;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   #main-block .block-second .circle-img {
     width: 100%;
     padding-right: 40px; }
@@ -7917,6 +7922,7 @@ p {
     #main-block .wraper-graphs .main-features-background .block-third {
       padding: 70px 30px; }
       #main-block .wraper-graphs .main-features-background .block-third .main-features h3 {
+        margin-top: 4px;
         text-transform: uppercase;
         text-align: right; }
         #main-block .wraper-graphs .main-features-background .block-third .main-features h3 .dark-bg {
@@ -7945,8 +7951,8 @@ p {
       letter-spacing: 2.87px; }
     #main-block .wraper-graphs .block-graphs .graphs-description h2 {
       position: relative;
-      padding-bottom: 38px;
-      padding-top: 62px;
+      padding-bottom: 35px;
+      padding-top: 30px;
       text-transform: uppercase;
       color: #1c1b1c;
       font-weight: 700;
@@ -8053,7 +8059,7 @@ p {
     padding-bottom: 45px;
     margin-bottom: 0; }
   #main-block .block-about-us .about-us-video {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 41px; }
     #main-block .block-about-us .about-us-video video {
@@ -8169,21 +8175,95 @@ footer {
       font-size: 14px;
       text-align: center; }
 
+@media (max-width: 1919px) {
+  h2 {
+    font-size: 17px; }
+  p {
+    font-size: 14px; }
+  #main-block #welcome-block .wraper {
+    height: auto; }
+  #main-block #welcome-block .wraper-block-first {
+    padding-bottom: 50px; }
+    #main-block #welcome-block .wraper-block-first #currency {
+      padding-top: 15px;
+      margin-bottom: 15px; }
+      #main-block #welcome-block .wraper-block-first #currency span {
+        color: #2a2a2a;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.56px;
+        line-height: 35px;
+        text-transform: uppercase; }
+    #main-block #welcome-block .wraper-block-first .block-first .social {
+      position: relative;
+      padding-bottom: 20px; }
+      #main-block #welcome-block .wraper-block-first .block-first .social:after {
+        display: none; }
+  #main-block .block-second .description .description-info p {
+    font-size: 16px;
+    font-weight: 400; }
+  #main-block .wraper-graphs .main-features-background .block-third {
+    padding: 40px 30px; }
+  #main-block .wraper-graphs .block-graphs {
+    padding: 15px 33px; }
+    #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
+      font-size: 51px;
+      font-weight: 700;
+      letter-spacing: 1.78px; }
+    #main-block .wraper-graphs .block-graphs .graphs-description h2 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-weight: 700;
+      line-height: 43px; }
+      #main-block .wraper-graphs .block-graphs .graphs-description h2:after {
+        left: 30%; }
+    #main-block .wraper-graphs .block-graphs .graphs-description p {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
+      left: 60%; } }
+
 @media (max-width: 992px) {
-  #main-block #welcome-block #welcome {
-    font-weight: 300;
-    letter-spacing: 0.98px;
-    line-height: 28px; }
-  #main-block #welcome-block h1 {
+  h1 {
+    font-size: 24px; }
+  p {
+    font-size: 12px; }
+  #main-block #welcome-block .wraper-block-first .block-first #welcome {
+    font-size: 24px; }
+  #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons {
+    font-size: 12px;
+    margin-bottom: 40px; }
+    #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .welcome-buttons {
+      height: 41px;
+      width: 150px; }
+  #main-block #welcome-block .wraper-block-first .block-first h1 {
     font-weight: 600;
-    line-height: 45px; }
+    line-height: 40px; }
+  #main-block #welcome-block .wraper-block-first .block-first .social {
+    position: relative;
+    padding-bottom: 20px; }
+    #main-block #welcome-block .wraper-block-first .block-first .social:after {
+      display: inline-block; }
   #main-block .block-second .description .description-info p {
     font-weight: 400; }
-  #main-block .block-graphs .graphs-description img {
-    width: 49px; }
-  #main-block .block-graphs .graphs-description h2 {
-    font-weight: 700;
-    line-height: 43px; } }
+  #main-block .wraper-graphs .block-graphs {
+    padding: 15px 33px; }
+    #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 1.78px; }
+    #main-block .wraper-graphs .block-graphs .graphs-description h2 {
+      padding-top: 0px;
+      padding-bottom: 10px;
+      font-weight: 700;
+      line-height: 43px; }
+      #main-block .wraper-graphs .block-graphs .graphs-description h2:after {
+        left: 30%; }
+    #main-block .wraper-graphs .block-graphs .graphs-description p {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
+      left: 60%; } }
 
 @media (max-width: 767px) {
   h1 {
@@ -8199,7 +8279,9 @@ footer {
   #main-block #welcome-block .wraper-block-first {
     height: 100%;
     padding-left: 20px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    background-color: #fff;
+    background-image: none; }
     #main-block #welcome-block .wraper-block-first #currency {
       padding-top: 15px;
       margin-bottom: 15px; }
@@ -8222,7 +8304,13 @@ footer {
           height: 41px;
           width: 150px; }
       #main-block #welcome-block .wraper-block-first .block-first h1 {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        max-width: 400px; }
+      #main-block #welcome-block .wraper-block-first .block-first .social {
+        position: relative;
+        padding-bottom: 20px; }
+        #main-block #welcome-block .wraper-block-first .block-first .social:after {
+          display: inline-block; }
   #main-block #welcome-block .block-second {
     display: none; }
   #main-block #welcome-block .wraper-graphs {
@@ -8269,7 +8357,7 @@ footer {
           height: 3px;
           background: #1b1b1b;
           margin-left: -100%;
-          margin-right: 30%; }
+          margin-right: 20%; }
         #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .register-link:hover {
           text-decoration: none; }
       #main-block #welcome-block .wraper-graphs .block-graphs .title-mobile {
