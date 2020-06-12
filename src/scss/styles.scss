@@ -38,6 +38,11 @@
         font-weight: 400;
     }
     
+    .container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
     #main-header {
         width: 100%;
         height: 62px;
@@ -164,14 +169,12 @@
                         font-weight: 700;
                         line-height: 63px;
                         color: #232323;
-                        margin-bottom: 50px;
+                        margin-bottom: 45px;
                         text-transform: uppercase;
                     }
                     .welcome-image-placeholder {
                         width: 100%;
-                        img {
-                            width: 100%;
-                        }
+                        img {}
                     }
                     .social {
                         position: relative;
@@ -208,6 +211,7 @@
                 }
             }
             .description {
+                padding: 0 30px;
                 h3 {
                     padding-top: 3px;
                     padding-bottom: 40px;
@@ -236,10 +240,10 @@
                     }
                 }
                 .description-info {
-                    margin-bottom: 40px;
+                    margin-bottom: 25px;
                     h2 {
                         font-weight: 700;
-                        margin-bottom: 40px;
+                        margin-bottom: 25px;
                     }
                     p {
                         color: #000000;
@@ -265,7 +269,7 @@
                 background: #fafafa;
                 margin-bottom: 115px;
                 .block-third {
-                    padding: 70px 30px;
+                    padding: 45px 30px;
                     .main-features {
                         h3 {
                             margin-top: 4px;
@@ -376,7 +380,7 @@
             box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.1);
             padding-left: 58px;
             padding-right: 58px;
-            padding-top: 50px;
+            padding-top: 0px;
             padding-bottom: 41px;
             .customers {
                 h3 {
@@ -429,9 +433,9 @@
         }
         .block-about-us {
             height: 100%;
-            margin-bottom: 160px;
+            margin-bottom: 100px;
             h2 {
-                padding-bottom: 30px;
+                padding-bottom: 15px;
                 margin-bottom: 0;
                 font-size: 28px;
                 font-weight: 700;
@@ -446,7 +450,7 @@
             .about-us-video {
                 width: 70%;
                 margin: 0 auto;
-                padding-bottom: 41px;
+                padding-bottom: 25px;
                 video {
                     width: 100%;
                 }
@@ -454,7 +458,7 @@
             hr {
                 width: 200px;
                 text-align: center;
-                height: 3px;
+                height: 2px;
                 background: #707070;
             }
         }
@@ -467,7 +471,8 @@
                 text-transform: uppercase;
             }
             p {
-                padding-top: 43px;
+                padding-top: 20px;
+                text-align: justify;
             }
             img {
                 width: 100%;
@@ -493,7 +498,7 @@
                         font-size: 14px;
                         letter-spacing: 0.49px;
                         line-height: 19px;
-                        padding-top: 43px;
+                        padding-top: 25px;
                         .feedback-button {
                             display: flex;
                             justify-content: center;
@@ -503,7 +508,6 @@
                             width: 230px;
                             text-transform: uppercase;
                             color: #fff;
-                            margin-right: 9px;
                             background-image: $main-button-color;
                             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
                         }
@@ -515,7 +519,7 @@
             }
         }
         .block-partners {
-            padding-top: 140px;
+            padding-top: 100px;
             padding-bottom: 132px;
             text-align: center;
             h2 {
@@ -595,11 +599,19 @@
     
     // *** MEDIA ***
     @media (max-width: 1919px) {
+        h1 {
+            font-size: 28px;
+            ;
+        }
         h2 {
             font-size: 17px;
         }
         p {
             font-size: 14px;
+        }
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
         }
         #main-block {
             #welcome-block {
@@ -621,18 +633,31 @@
                         }
                     }
                     .block-first {
+                        #welcome {
+                            padding-top: 35px;
+                        }
+                        #welcome-buttons {
+                            margin-bottom: 70px;
+                        }
+                        h1 {
+                            margin-bottom: 35px;
+                            line-height: 50px;
+                        }
+                        .welcome-image-placeholder {
+                            img {
+                                width: 100%;
+                            }
+                        }
                         .social {
                             position: relative;
                             padding-bottom: 20px;
-                            &:after {
-                                display: none;
-                            }
                         }
                     }
                 }
             }
             .block-second {
                 .description {
+                    padding: 0;
                     .description-info {
                         p {
                             font-size: 16px;
@@ -644,12 +669,12 @@
             .wraper-graphs {
                 .main-features-background {
                     .block-third {
-                        padding: 40px 30px;
+                        padding: 35px 30px;
                     }
                     //block-third
                 }
                 .block-graphs {
-                    padding: 15px 33px;
+                    padding: 19px 19px 15px 19px;
                     .graphs-description {
                         .number-block-graphs {
                             font-size: 51px;
@@ -679,11 +704,94 @@
                     }
                 }
             }
+            .block-customer {
+                margin-bottom: 100px;
+                hr {
+                    margin-bottom: 30px;
+                }
+                .customers-windows-description {
+                    img {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+            .block-about-us {
+                margin-bottom: 80px;
+                h2 {
+                    padding-bottom: 13px;
+                }
+                p {
+                    padding-bottom: 26px;
+                }
+                .about-us-video {
+                    padding-bottom: 20px;
+                }
+            }
+            .block-solution {
+                margin-bottom: 80px;
+                p {
+                    padding-top: 5px;
+                }
+            }
+            .wraper-block-feedback {
+                .block-feedback {
+                    .feedback-description {
+                        h2 {
+                            padding-bottom: 10px;
+                        }
+                        #feedback-button {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+            .block-partners {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                h2 {
+                    padding-bottom: 70px;
+                }
+                img {
+                    width: 100%;
+                }
+                .partner-section-input {
+                    width: 100%;
+                    padding-top: 99px;
+                    p {
+                        text-align: right;
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        color: #292929;
+                    }
+                    .input-group {
+                        .form-control {
+                            border: 1px solid #292929;
+                            border-radius: 0;
+                            font-size: 20px;
+                            max-width: 360px;
+                        }
+                        .input-group-append {
+                            .btn-outline-secondary {
+                                background-color: #292929;
+                                border: 1px solid #292929;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     } //1919
     @media (max-width: 992px) {
         h1 {
             font-size: 24px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        h4 {
+            font-size: 16px;
         }
         p {
             font-size: 12px;
@@ -691,13 +799,16 @@
         #main-block {
             #welcome-block {
                 .wraper-block-first {
+                    margin-bottom: 0px;
                     .block-first {
+                        padding-left: 30px;
+                        padding-right: 30px;
                         #welcome {
                             font-size: 24px;
                         }
                         #welcome-buttons {
                             font-size: 12px;
-                            margin-bottom: 40px;
+                            margin-bottom: 63px;
                             .welcome-buttons {
                                 height: 41px;
                                 width: 150px;
@@ -706,6 +817,13 @@
                         h1 {
                             font-weight: 600;
                             line-height: 40px;
+                            margin-bottom: 35px;
+                            max-width: 400px;
+                        }
+                        .welcome-image-placeholder {
+                            img {
+                                width: 100%;
+                            }
                         }
                         .social {
                             position: relative;
@@ -718,20 +836,32 @@
                 }
             }
             .block-second {
+                margin-bottom: 0px;
                 .description {
+                    h3 {
+                        padding-bottom: 25px;
+                        font-size: 22px;
+                    }
                     .description-info {
                         p {
                             font-weight: 400;
+                            font-size: 14px;
+                            line-height: 25px;
                         }
                     }
                 }
             }
             .wraper-graphs {
+                margin-bottom: 100px;
+                .main-features-background {
+                    margin-bottom: 55px;
+                }
                 .block-graphs {
-                    padding: 15px 33px;
+                    padding: 19px 19px 15px 19px;
+                    margin-bottom: 65px;
                     .graphs-description {
                         .number-block-graphs {
-                            font-size: 40px;
+                            font-size: 29px;
                             font-weight: 700;
                             letter-spacing: 1.78px;
                         }
@@ -747,12 +877,111 @@
                         p {
                             padding-top: 10px;
                             padding-bottom: 10px;
+                            line-height: 25px;
+                        }
+                        .register-link {
+                            padding-bottom: 0;
                         }
                     }
                     .graphs-description-reverse {
                         h2 {
                             &:after {
                                 left: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+            .block-customer {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 32px;
+                padding-bottom: 50px;
+                margin-bottom: 100px;
+                hr {
+                    margin-top: 0px;
+                }
+                .customers-windows-description {
+                    img {
+                        width: 100%;
+                        padding-top: 13px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+            .block-about-us {
+                margin-bottom: 65px;
+                h2 {
+                    padding-bottom: 13px;
+                }
+                p {
+                    padding-bottom: 26px;
+                }
+                .about-us-video {
+                    padding-bottom: 20px;
+                }
+                hr {
+                    width: 200px;
+                    text-align: center;
+                    height: 3px;
+                    background: #707070;
+                }
+            }
+            .block-solution {
+                margin-bottom: 70px;
+                h2 {
+                    line-height: 35px;
+                    max-width: 330px;
+                }
+                p {
+                    padding-top: 7px;
+                    line-height: 25px;
+                }
+            }
+            .wraper-block-feedback {
+                .block-feedback {
+                    padding-top: 60px;
+                    padding-bottom: 40px;
+                    .feedback-description {
+                        h2 {
+                            padding-bottom: 20px;
+                        }
+                        #feedback-button {
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+            .block-partners {
+                padding-top: 70px;
+                padding-bottom: 80px;
+                h2 {
+                    padding-bottom: 70px;
+                }
+                img {
+                    width: 100%;
+                }
+                .partner-section-input {
+                    width: 100%;
+                    padding-top: 99px;
+                    p {
+                        text-align: right;
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        color: #292929;
+                    }
+                    .input-group {
+                        .form-control {
+                            border: 1px solid #292929;
+                            border-radius: 0;
+                            font-size: 20px;
+                            max-width: 360px;
+                        }
+                        .input-group-append {
+                            .btn-outline-secondary {
+                                background-color: #292929;
+                                border: 1px solid #292929;
+                                font-size: 20px;
                             }
                         }
                     }
@@ -779,8 +1008,7 @@
             #welcome-block {
                 .wraper-block-first {
                     height: 100%;
-                    padding-left: 20px;
-                    margin-bottom: 50px;
+                    margin-bottom: 5px;
                     background-color: #fff;
                     background-image: none;
                     #currency {
@@ -797,13 +1025,14 @@
                     }
                     .block-first {
                         height: 100%;
-                        padding-top: 30px;
+                        padding-top: 5px;
                         #welcome {
                             font-size: 24px;
+                            padding-bottom: 7px;
                         }
                         #welcome-buttons {
                             font-size: 12px;
-                            margin-bottom: 40px;
+                            margin-bottom: 35px;
                             .welcome-buttons {
                                 height: 41px;
                                 width: 150px;
@@ -812,6 +1041,12 @@
                         h1 {
                             margin-bottom: 20px;
                             max-width: 400px;
+                            line-height: 36px;
+                        }
+                        .welcome-image-placeholder {
+                            img {
+                                width: 100%;
+                            }
                         }
                         .social {
                             position: relative;
@@ -851,7 +1086,7 @@
                     ///main-features-background
                     .block-graphs {
                         box-shadow: none;
-                        padding: 20px;
+                        padding: 0px 20px;
                         margin-bottom: 0;
                         .graphs-description {
                             .number-block-graphs {
@@ -956,24 +1191,28 @@
                     }
                     img {
                         width: 100%;
-                        padding-top: 41px;
-                        padding-bottom: 41px;
+                        padding-top: 15px;
+                        padding-bottom: 21px;
                     }
                 }
             }
             .block-about-us {
                 padding-left: 20px;
                 padding-right: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 5px;
                 h2 {
                     font-size: 24px;
+                    padding-bottom: 12px;
                 }
                 p {
-                    display: none;
+                    padding-bottom: 20px;
                 }
                 .about-us-video {
                     width: 100%;
-                    padding-bottom: 20px;
+                    padding-bottom: 4px;
+                    video {
+                        padding: 0 38px;
+                    }
                 }
                 hr {
                     width: 80px;
@@ -982,7 +1221,7 @@
             }
             .block-solution {
                 height: 100%;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
                 padding-left: 20px;
                 padding-right: 20px;
                 h2 {
@@ -1025,7 +1264,7 @@
                 padding-top: 40px;
                 padding-bottom: 30px;
                 h2 {
-                    padding-bottom: 12px;
+                    padding-bottom: 25px;
                     font-size: 24px;
                 }
                 img {

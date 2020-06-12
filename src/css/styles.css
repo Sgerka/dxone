@@ -7734,6 +7734,10 @@ p {
   line-height: 30px;
   font-weight: 400; }
 
+.container {
+  padding-left: 45px;
+  padding-right: 45px; }
+
 #main-header {
   width: 100%;
   height: 62px;
@@ -7840,12 +7844,10 @@ p {
       font-weight: 700;
       line-height: 63px;
       color: #232323;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
       text-transform: uppercase; }
     #main-block #welcome-block .wraper-block-first .block-first .welcome-image-placeholder {
       width: 100%; }
-      #main-block #welcome-block .wraper-block-first .block-first .welcome-image-placeholder img {
-        width: 100%; }
     #main-block #welcome-block .wraper-block-first .block-first .social {
       position: relative;
       padding-bottom: 20px; }
@@ -7873,45 +7875,47 @@ p {
     padding-right: 40px; }
     #main-block .block-second .circle-img img {
       width: 100%; }
-  #main-block .block-second .description h3 {
-    padding-top: 3px;
-    padding-bottom: 40px;
-    text-transform: uppercase;
-    text-align: right;
-    overflow: hidden; }
-    #main-block .block-second .description h3:before {
-      content: '';
-      display: inline-block;
-      vertical-align: middle;
-      box-sizing: border-box;
+  #main-block .block-second .description {
+    padding: 0 30px; }
+    #main-block .block-second .description h3 {
+      padding-top: 3px;
+      padding-bottom: 40px;
+      text-transform: uppercase;
+      text-align: right;
+      overflow: hidden; }
+      #main-block .block-second .description h3:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        width: 100%;
+        height: 3px;
+        background: #000;
+        margin-left: -100%;
+        margin-right: 25px; }
+      #main-block .block-second .description h3 .dark-bg {
+        color: #fff;
+        background: #000;
+        padding: 3px 5px 3px 10px; }
+      #main-block .block-second .description h3 .light-bg {
+        background: #f5f5f5;
+        padding: 3px 0px 3px 5px; }
+    #main-block .block-second .description .description-info {
+      margin-bottom: 25px; }
+      #main-block .block-second .description .description-info h2 {
+        font-weight: 700;
+        margin-bottom: 25px; }
+      #main-block .block-second .description .description-info p {
+        color: #000000;
+        font-weight: 400;
+        text-align: justify; }
+    #main-block .block-second .description .register-link {
       width: 100%;
-      height: 3px;
-      background: #000;
-      margin-left: -100%;
-      margin-right: 25px; }
-    #main-block .block-second .description h3 .dark-bg {
-      color: #fff;
-      background: #000;
-      padding: 3px 5px 3px 10px; }
-    #main-block .block-second .description h3 .light-bg {
-      background: #f5f5f5;
-      padding: 3px 0px 3px 5px; }
-  #main-block .block-second .description .description-info {
-    margin-bottom: 40px; }
-    #main-block .block-second .description .description-info h2 {
-      font-weight: 700;
-      margin-bottom: 40px; }
-    #main-block .block-second .description .description-info p {
-      color: #000000;
-      font-weight: 400;
-      text-align: justify; }
-  #main-block .block-second .description .register-link {
-    width: 100%;
-    display: block;
-    text-transform: uppercase;
-    text-align: right; }
-    #main-block .block-second .description .register-link:hover {
-      text-decoration: none; }
+      display: block;
+      text-transform: uppercase;
+      text-align: right; }
+      #main-block .block-second .description .register-link:hover {
+        text-decoration: none; }
 
 #main-block .wraper-graphs {
   margin-bottom: 140px; }
@@ -7920,7 +7924,7 @@ p {
     background: #fafafa;
     margin-bottom: 115px; }
     #main-block .wraper-graphs .main-features-background .block-third {
-      padding: 70px 30px; }
+      padding: 45px 30px; }
       #main-block .wraper-graphs .main-features-background .block-third .main-features h3 {
         margin-top: 4px;
         text-transform: uppercase;
@@ -8004,7 +8008,7 @@ p {
   box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.1);
   padding-left: 58px;
   padding-right: 58px;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 41px; }
   #main-block .block-customer .customers h3 {
     padding-top: 3px;
@@ -8046,9 +8050,9 @@ p {
 
 #main-block .block-about-us {
   height: 100%;
-  margin-bottom: 160px; }
+  margin-bottom: 100px; }
   #main-block .block-about-us h2 {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     margin-bottom: 0;
     font-size: 28px;
     font-weight: 700;
@@ -8061,13 +8065,13 @@ p {
   #main-block .block-about-us .about-us-video {
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 41px; }
+    padding-bottom: 25px; }
     #main-block .block-about-us .about-us-video video {
       width: 100%; }
   #main-block .block-about-us hr {
     width: 200px;
     text-align: center;
-    height: 3px;
+    height: 2px;
     background: #707070; }
 
 #main-block .block-solution {
@@ -8078,7 +8082,8 @@ p {
     line-height: 43px;
     text-transform: uppercase; }
   #main-block .block-solution p {
-    padding-top: 43px; }
+    padding-top: 20px;
+    text-align: justify; }
   #main-block .block-solution img {
     width: 100%; }
 
@@ -8101,7 +8106,7 @@ p {
         font-size: 14px;
         letter-spacing: 0.49px;
         line-height: 19px;
-        padding-top: 43px; }
+        padding-top: 25px; }
         #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button .feedback-button {
           display: flex;
           justify-content: center;
@@ -8111,14 +8116,13 @@ p {
           width: 230px;
           text-transform: uppercase;
           color: #fff;
-          margin-right: 9px;
           background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
         #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button a:hover {
           text-decoration: none; }
 
 #main-block .block-partners {
-  padding-top: 140px;
+  padding-top: 100px;
   padding-bottom: 132px;
   text-align: center; }
   #main-block .block-partners h2 {
@@ -8176,10 +8180,15 @@ footer {
       text-align: center; }
 
 @media (max-width: 1919px) {
+  h1 {
+    font-size: 28px; }
   h2 {
     font-size: 17px; }
   p {
     font-size: 14px; }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px; }
   #main-block #welcome-block .wraper {
     height: auto; }
   #main-block #welcome-block .wraper-block-first {
@@ -8194,18 +8203,27 @@ footer {
         letter-spacing: 0.56px;
         line-height: 35px;
         text-transform: uppercase; }
+    #main-block #welcome-block .wraper-block-first .block-first #welcome {
+      padding-top: 35px; }
+    #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons {
+      margin-bottom: 70px; }
+    #main-block #welcome-block .wraper-block-first .block-first h1 {
+      margin-bottom: 35px;
+      line-height: 50px; }
+    #main-block #welcome-block .wraper-block-first .block-first .welcome-image-placeholder img {
+      width: 100%; }
     #main-block #welcome-block .wraper-block-first .block-first .social {
       position: relative;
       padding-bottom: 20px; }
-      #main-block #welcome-block .wraper-block-first .block-first .social:after {
-        display: none; }
-  #main-block .block-second .description .description-info p {
-    font-size: 16px;
-    font-weight: 400; }
+  #main-block .block-second .description {
+    padding: 0; }
+    #main-block .block-second .description .description-info p {
+      font-size: 16px;
+      font-weight: 400; }
   #main-block .wraper-graphs .main-features-background .block-third {
-    padding: 40px 30px; }
+    padding: 35px 30px; }
   #main-block .wraper-graphs .block-graphs {
-    padding: 15px 33px; }
+    padding: 19px 19px 15px 19px; }
     #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
       font-size: 51px;
       font-weight: 700;
@@ -8221,49 +8239,188 @@ footer {
       padding-top: 15px;
       padding-bottom: 15px; }
     #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
-      left: 60%; } }
+      left: 60%; }
+  #main-block .block-customer {
+    margin-bottom: 100px; }
+    #main-block .block-customer hr {
+      margin-bottom: 30px; }
+    #main-block .block-customer .customers-windows-description img {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  #main-block .block-about-us {
+    margin-bottom: 80px; }
+    #main-block .block-about-us h2 {
+      padding-bottom: 13px; }
+    #main-block .block-about-us p {
+      padding-bottom: 26px; }
+    #main-block .block-about-us .about-us-video {
+      padding-bottom: 20px; }
+  #main-block .block-solution {
+    margin-bottom: 80px; }
+    #main-block .block-solution p {
+      padding-top: 5px; }
+  #main-block .wraper-block-feedback .block-feedback .feedback-description h2 {
+    padding-bottom: 10px; }
+  #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
+    padding-top: 10px; }
+  #main-block .block-partners {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    #main-block .block-partners h2 {
+      padding-bottom: 70px; }
+    #main-block .block-partners img {
+      width: 100%; }
+    #main-block .block-partners .partner-section-input {
+      width: 100%;
+      padding-top: 99px; }
+      #main-block .block-partners .partner-section-input p {
+        text-align: right;
+        font-size: 20px;
+        margin-bottom: 0;
+        color: #292929; }
+      #main-block .block-partners .partner-section-input .input-group .form-control {
+        border: 1px solid #292929;
+        border-radius: 0;
+        font-size: 20px;
+        max-width: 360px; }
+      #main-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
+        background-color: #292929;
+        border: 1px solid #292929;
+        font-size: 20px; } }
 
 @media (max-width: 992px) {
   h1 {
     font-size: 24px; }
+  h3 {
+    font-size: 22px; }
+  h4 {
+    font-size: 16px; }
   p {
     font-size: 12px; }
-  #main-block #welcome-block .wraper-block-first .block-first #welcome {
-    font-size: 24px; }
-  #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons {
-    font-size: 12px;
-    margin-bottom: 40px; }
-    #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .welcome-buttons {
-      height: 41px;
-      width: 150px; }
-  #main-block #welcome-block .wraper-block-first .block-first h1 {
-    font-weight: 600;
-    line-height: 40px; }
-  #main-block #welcome-block .wraper-block-first .block-first .social {
-    position: relative;
-    padding-bottom: 20px; }
-    #main-block #welcome-block .wraper-block-first .block-first .social:after {
-      display: inline-block; }
-  #main-block .block-second .description .description-info p {
-    font-weight: 400; }
-  #main-block .wraper-graphs .block-graphs {
-    padding: 15px 33px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
-      font-size: 40px;
-      font-weight: 700;
-      letter-spacing: 1.78px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description h2 {
-      padding-top: 0px;
-      padding-bottom: 10px;
-      font-weight: 700;
-      line-height: 43px; }
-      #main-block .wraper-graphs .block-graphs .graphs-description h2:after {
-        left: 30%; }
-    #main-block .wraper-graphs .block-graphs .graphs-description p {
-      padding-top: 10px;
-      padding-bottom: 10px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
-      left: 60%; } }
+  #main-block #welcome-block .wraper-block-first {
+    margin-bottom: 0px; }
+    #main-block #welcome-block .wraper-block-first .block-first {
+      padding-left: 30px;
+      padding-right: 30px; }
+      #main-block #welcome-block .wraper-block-first .block-first #welcome {
+        font-size: 24px; }
+      #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons {
+        font-size: 12px;
+        margin-bottom: 63px; }
+        #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .welcome-buttons {
+          height: 41px;
+          width: 150px; }
+      #main-block #welcome-block .wraper-block-first .block-first h1 {
+        font-weight: 600;
+        line-height: 40px;
+        margin-bottom: 35px;
+        max-width: 400px; }
+      #main-block #welcome-block .wraper-block-first .block-first .welcome-image-placeholder img {
+        width: 100%; }
+      #main-block #welcome-block .wraper-block-first .block-first .social {
+        position: relative;
+        padding-bottom: 20px; }
+        #main-block #welcome-block .wraper-block-first .block-first .social:after {
+          display: inline-block; }
+  #main-block .block-second {
+    margin-bottom: 0px; }
+    #main-block .block-second .description h3 {
+      padding-bottom: 25px;
+      font-size: 22px; }
+    #main-block .block-second .description .description-info p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px; }
+  #main-block .wraper-graphs {
+    margin-bottom: 100px; }
+    #main-block .wraper-graphs .main-features-background {
+      margin-bottom: 55px; }
+    #main-block .wraper-graphs .block-graphs {
+      padding: 19px 19px 15px 19px;
+      margin-bottom: 65px; }
+      #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
+        font-size: 29px;
+        font-weight: 700;
+        letter-spacing: 1.78px; }
+      #main-block .wraper-graphs .block-graphs .graphs-description h2 {
+        padding-top: 0px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        line-height: 43px; }
+        #main-block .wraper-graphs .block-graphs .graphs-description h2:after {
+          left: 30%; }
+      #main-block .wraper-graphs .block-graphs .graphs-description p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 25px; }
+      #main-block .wraper-graphs .block-graphs .graphs-description .register-link {
+        padding-bottom: 0; }
+      #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
+        left: 60%; }
+  #main-block .block-customer {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 50px;
+    margin-bottom: 100px; }
+    #main-block .block-customer hr {
+      margin-top: 0px; }
+    #main-block .block-customer .customers-windows-description img {
+      width: 100%;
+      padding-top: 13px;
+      padding-bottom: 0px; }
+  #main-block .block-about-us {
+    margin-bottom: 65px; }
+    #main-block .block-about-us h2 {
+      padding-bottom: 13px; }
+    #main-block .block-about-us p {
+      padding-bottom: 26px; }
+    #main-block .block-about-us .about-us-video {
+      padding-bottom: 20px; }
+    #main-block .block-about-us hr {
+      width: 200px;
+      text-align: center;
+      height: 3px;
+      background: #707070; }
+  #main-block .block-solution {
+    margin-bottom: 70px; }
+    #main-block .block-solution h2 {
+      line-height: 35px;
+      max-width: 330px; }
+    #main-block .block-solution p {
+      padding-top: 7px;
+      line-height: 25px; }
+  #main-block .wraper-block-feedback .block-feedback {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    #main-block .wraper-block-feedback .block-feedback .feedback-description h2 {
+      padding-bottom: 20px; }
+    #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
+      padding-top: 15px; }
+  #main-block .block-partners {
+    padding-top: 70px;
+    padding-bottom: 80px; }
+    #main-block .block-partners h2 {
+      padding-bottom: 70px; }
+    #main-block .block-partners img {
+      width: 100%; }
+    #main-block .block-partners .partner-section-input {
+      width: 100%;
+      padding-top: 99px; }
+      #main-block .block-partners .partner-section-input p {
+        text-align: right;
+        font-size: 20px;
+        margin-bottom: 0;
+        color: #292929; }
+      #main-block .block-partners .partner-section-input .input-group .form-control {
+        border: 1px solid #292929;
+        border-radius: 0;
+        font-size: 20px;
+        max-width: 360px; }
+      #main-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
+        background-color: #292929;
+        border: 1px solid #292929;
+        font-size: 20px; } }
 
 @media (max-width: 767px) {
   h1 {
@@ -8278,8 +8435,7 @@ footer {
     text-align: justify; }
   #main-block #welcome-block .wraper-block-first {
     height: 100%;
-    padding-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     background-color: #fff;
     background-image: none; }
     #main-block #welcome-block .wraper-block-first #currency {
@@ -8294,18 +8450,22 @@ footer {
         text-transform: uppercase; }
     #main-block #welcome-block .wraper-block-first .block-first {
       height: 100%;
-      padding-top: 30px; }
+      padding-top: 5px; }
       #main-block #welcome-block .wraper-block-first .block-first #welcome {
-        font-size: 24px; }
+        font-size: 24px;
+        padding-bottom: 7px; }
       #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons {
         font-size: 12px;
-        margin-bottom: 40px; }
+        margin-bottom: 35px; }
         #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .welcome-buttons {
           height: 41px;
           width: 150px; }
       #main-block #welcome-block .wraper-block-first .block-first h1 {
         margin-bottom: 20px;
-        max-width: 400px; }
+        max-width: 400px;
+        line-height: 36px; }
+      #main-block #welcome-block .wraper-block-first .block-first .welcome-image-placeholder img {
+        width: 100%; }
       #main-block #welcome-block .wraper-block-first .block-first .social {
         position: relative;
         padding-bottom: 20px; }
@@ -8329,7 +8489,7 @@ footer {
           display: none; }
     #main-block #welcome-block .wraper-graphs .block-graphs {
       box-shadow: none;
-      padding: 20px;
+      padding: 0px 20px;
       margin-bottom: 0; }
       #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
         display: none; }
@@ -8406,25 +8566,28 @@ footer {
       text-transform: uppercase; }
     #main-block .block-customer .customers-windows-description img {
       width: 100%;
-      padding-top: 41px;
-      padding-bottom: 41px; }
+      padding-top: 15px;
+      padding-bottom: 21px; }
   #main-block .block-about-us {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 5px; }
     #main-block .block-about-us h2 {
-      font-size: 24px; }
+      font-size: 24px;
+      padding-bottom: 12px; }
     #main-block .block-about-us p {
-      display: none; }
+      padding-bottom: 20px; }
     #main-block .block-about-us .about-us-video {
       width: 100%;
-      padding-bottom: 20px; }
+      padding-bottom: 4px; }
+      #main-block .block-about-us .about-us-video video {
+        padding: 0 38px; }
     #main-block .block-about-us hr {
       width: 80px;
       height: 1px; }
   #main-block .block-solution {
     height: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px; }
     #main-block .block-solution h2 {
@@ -8456,7 +8619,7 @@ footer {
     padding-top: 40px;
     padding-bottom: 30px; }
     #main-block .block-partners h2 {
-      padding-bottom: 12px;
+      padding-bottom: 25px;
       font-size: 24px; }
     #main-block .block-partners img {
       width: 100%; }
