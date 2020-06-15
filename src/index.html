@@ -18,7 +18,7 @@
                     <img id="header-logo-img" src="img/header-logo.svg">
                 </a>
             </div>
-            <div id="main-header-buttons" class="d-none d-sm-flex">
+            <div id="main-header-buttons" class=" d-flex">
                 <a class="header-buttons login-button" href="#">
                 Login
             </a>
@@ -28,6 +28,7 @@
             </div>
         </nav>
     </header>
+    <div class="header"></div>
     <div class="divider"></div>
     <main id="main-block">
         <div class="container-fluid p-0" id="welcome-block">
@@ -52,7 +53,7 @@
                                     <img src="img/d-tw.svg" alt="tw">
                                 </a>
                                 <a href="" class="social-dark-links">
-                                    <img src="img/d-ln.svg" alt="in">
+                                    <img src="img/d-in.svg" alt="in">
                                 </a>
                                 <a href="" class="social-dark-links">
                                     <img src="img/d-m.svg" alt="m">
@@ -67,30 +68,94 @@
                     </div>
                 </div>
             </div>
-            <div class="wraper">
+            <div class="wraper wraper-block-second">
                 <div class="container block-second">
                     <div class="row">
                         <div class="col-md-6 align-self-center">
                             <div class="circle-img">
-                                <img src="img/circle-group.svg" alt="">
+                                <img src="img/background-circle.svg" alt="">
+                                <a href="#" id="img-software-section"><img src="img/img_software-section.svg" alt=""></a>
+                                <a href="#" id="img-layout-section"><img src="img/img_layout-section.svg" alt=""></a>
+                                <a href="#" id="img-features-section"><img src="img/img_features-section.svg" alt=""></a>
+                                <a href="#" id="img-crypto-section"><img src="img/img_crypto-section.svg" alt=""></a>
+                                <a href="#" id="img-newsfeeds-section"><img src="img/img_newsfeeds-section.svg" alt=""></a>
+                                <a href="#" id="img-security-section"><img src="img/img_security-section.svg" alt=""></a>
+                                <a href="#" id="img-solution-section"><img src="img/img_solution-section.svg" alt=""></a>
+                            </div>
+                            <div class="circle-logo">
+                                <div class="circle-logo-content">
+                                    <img src="img/logo-circle.svg" alt="">
+                                    <span>Outstanding Tools
+                                        & Services</span>
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-6 align-self-center">
                             <div class="description">
+                                <!-- <div class="progress"></div> -->
                                 <h3>
                                     <span class="dark-bg">why</span><span class="light-bg">cho</span><span>ose
                                         us?</span>
                                 </h3>
-                                <div class="description-info">
+                                <div id="dashboards-section" class="description-info">
                                     <h2>Customisable dashboards</h2>
                                     <p>DXone traders have the freedom to design their own, customised dashboards. Features include best-in-class trading widgets that contain all the essential services to trade efficiently.
 
                                     </p>
                                 </div>
+                                <div id="software-section" class="d-none description-info">
+                                    <h2>Proprietary Software</h2>
+                                    <p>Our software has been developed completely in-house. As a result, the integration of widgets, services, and trading tools are seamless compared to other exchanges which allows us to make adjustments and improvements
+                                        without being dependent on third party providers.
+
+                                    </p>
+                                </div>
+                                <div id="layout-section" class="d-none description-info">
+                                    <h2>Custom Widgets and Layout</h2>
+                                    <p>Users can select three different layouts to suit their individual types of viewing/trading interests and preferences. They can drag-and-drop from a variety of 40 widgets to customise their trading experience.
+
+
+                                    </p>
+                                </div>
+                                <div id="features-section" class="d-none description-info">
+                                    <h2>Comprehensive Suite of Professional Trading Features</h2>
+                                    <p>As a standard, all DXone traders have access to our cutting-edge trading tools and features. Choose between real-time view of order book histories, regression analysis tools, arbitrage monitoring, technical analysis,
+                                        spread charts, unique order types, any to any coin analysis, historical volume analysis and much more.
+
+
+                                    </p>
+                                </div>
+                                <div id="crypto-section" class="d-none description-info">
+                                    <h2>Cryptocurrencies and Exchanges</h2>
+                                    <p>Analyse more than 1,000 cryptocurrencies, monitor 100,000+ trading pairs (any-to-any coin analysis) and enjoy real-time monitoring of the top 12 exchanges (120 more to follow later in 2020).
+
+                                    </p>
+                                </div>
+                                <div id="newsfeeds-section" class="d-none description-info">
+                                    <h2>News Feeds</h2>
+                                    <p>Our news feeds provide relevant information from media sources we consider some of the best and most reputable in the crypto markets. Traders can select their favourite news providers and filter them. Custom dashboards
+                                        can also be chosen to create a single layout for news.
+
+
+                                    </p>
+                                </div>
+                                <div id="security-section" class="d-none description-info">
+                                    <h2>BitGo - Digital Asset Crypto Custody Insurance</h2>
+                                    <p>We want to ensure a secure environment for our customers funds. To do so, we decided to partner up with BitGo as a custody provider. If you want to learn more about Bitgo click on the following link:
+                                        <img src="img/bitgo.svg" alt=""> <a href="www.bitgo.com/resources/digital-asset-insurance" style="color: blue;"> www.bitgo.com/resources/digital-asset-insurance</a>
+                                    </p>
+                                </div>
+                                <div id="solution-section" class="d-none description-info">
+                                    <h2>Integrated API Solution</h2>
+                                    <p>Data from 20 exchanges will be available via ultra-fast API in real time. We will also provide special access to our platform for traders and analysts via our API solution.
+                                    </p>
+                                </div>
                                 <a href="#" class="register-link">
                                     <span>
-                                        register now
+                                        register now 
                                     </span>
+                                    <img src="img/arrow.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -101,7 +166,7 @@
                 <div class="main-features-background">
                     <div class="container block-third">
                         <div class="row">
-                            <div class="col-md-4 main-features">
+                            <div class="col-md-4 align-self-center main-features">
                                 <h3>
                                     <span class="dark-bg">main</span><span class="light-bg">feat</span><span>ures</span>
                                 </h3>
@@ -124,6 +189,7 @@
                                     <span>
                                         register now
                                     </span>
+                                    <img src="img/arrow.svg" alt="">
                                 </a>
                             </div>
 
@@ -154,6 +220,7 @@
                                     <span>
                                         register now
                                     </span>
+                                    <img src="img/arrow.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -170,6 +237,7 @@
                                     <span>
                                         register now
                                     </span>
+                                    <img src="img/arrow.svg" alt="">
                                 </a>
                             </div>
 
@@ -183,7 +251,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wraper">
+            <div class="wraper wraper-block-customer">
                 <div class="container block-customer">
                     <div class="row">
                         <div class="col-md-6 pr-0 align-self-center">
@@ -204,15 +272,39 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <h4>developers</h4>
-                                        <img src="img/developers_customer_section.png" srcset="img/developers_customer_section@2x.png" alt="">
+                                        <div class="customer-window">
+                                            <div class="customer-window-background">
+                                                <h5>Outstanding Experience</h5>
+                                                <p>To benefit the trading community, we allow third-party providers to integrate a wide variety of their services via our safe and user-friendly Integrated Development Environment (IDE). Services can include
+                                                    great information, data, strategies, approaches and tools.</p>
+                                            </div>
+                                            <img src="img/developers_customer_section.png" srcset="img/developers_customer_section@2x.png" alt="">
+                                        </div>
+
                                     </div>
                                     <div class="col-md-4">
                                         <h4>traders</h4>
-                                        <img src="img/traders_customer_section.png" srcset="img/traders_customer_section@2x.png" alt="">
+                                        <div class="customer-window">
+                                            <div class="customer-window-background">
+                                                <h5>Outstanding Experience</h5>
+                                                <p>To benefit the trading community, we allow third-party providers to integrate a wide variety of their services via our safe and user-friendly Integrated Development Environment (IDE). Services can include
+                                                    great information, data, strategies, approaches and tools.</p>
+                                            </div>
+                                            <img src="img/traders_customer_section.png" srcset="img/traders_customer_section@2x.png" alt="">
+                                        </div>
+
                                     </div>
                                     <div class="col-md-4">
                                         <h4>market analysts</h4>
-                                        <img src="img/analysts_customer_section.png" srcset="img/analysts_customer_section2x.png" alt="">
+                                        <div class="customer-window">
+                                            <div class="customer-window-background">
+                                                <h5>Outstanding Experience</h5>
+                                                <p>To benefit the trading community, we allow third-party providers to integrate a wide variety of their services via our safe and user-friendly Integrated Development Environment (IDE). Services can include
+                                                    great information, data, strategies, approaches and tools.</p>
+                                            </div>
+                                            <img src="img/analysts_customer_section.png" srcset="img/analysts_customer_section2x.png" alt="">
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +319,7 @@
                             <h2>More about us</h2>
                             <p>We are in a journey for creating edge solutions.</p>
                             <div class="about-us-video">
-                                <video width="" height="" controls="controls" poster="">
+                                <video width="" height="" controls="controls" poster="img/video-screen.jpg">
                                     <source src="inc/comp-panasonicTV_x264.mp4">
                                 </video>
                             </div>
@@ -309,12 +401,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-2 d-none d-md-block">
-                    <a class="footer-menu-link" href="#">
-                        <p>about</p>
-                    </a>
-                </div>
-                <div class="col-md-2 d-none d-md-block">
+                <div class="col d-none d-md-block">
                     <a class="footer-menu-link" href="#">
                         <p>Legal Notice</p>
                     </a>
@@ -322,7 +409,7 @@
                         <p>Terms of use</p>
                     </a>
                 </div>
-                <div class="col-md-2 d-none d-md-block">
+                <div class="col d-none d-md-block">
                     <a class="footer-menu-link" href="#">
                         <p>Cookie Policy</p>
                     </a>
@@ -330,7 +417,7 @@
                         <p>Privacy policy</p>
                     </a>
                 </div>
-                <div class="col-md-3 d-none d-md-block">
+                <div class="col d-none d-md-block">
                     <a class="footer-menu-link" href="#">
                         <p>Law enforcement</p>
                     </a>
@@ -338,23 +425,25 @@
                         <p>risk warning</p>
                     </a>
                 </div>
-                <div class="col-md-3 d-none d-md-block">
+                <div class="col d-none d-md-block">
                     <a class="footer-menu-link" href="#">
                         <p>acceptable use policy</p>
                     </a>
+                </div>
+                <div class="col d-none d-md-block">
                     <p>Follow us on</p>
                     <div class="social-footer">
                         <a href="" class="social-light-links" id="fb-light-link">
-                            <img src="img/l-fb.svg" alt="fb">
+                            <img src="img/d-fb.svg" alt="fb">
                         </a>
                         <a href="" class="social-light-links" id="tw-light-link">
-                            <img src="img/l-tw.svg" alt="tw">
+                            <img src="img/d-tw.svg" alt="tw">
                         </a>
                         <a href="" class="social-light-links">
-                            <img src="img/l-in.svg" alt="in">
+                            <img src="img/d-in.svg" alt="in">
                         </a>
                         <a href="" class="social-light-links">
-                            <img src="img/l-m.svg" alt="m">
+                            <img src="img/d-m.svg" alt="m">
                         </a>
                     </div>
                 </div>
@@ -391,16 +480,16 @@
                     <div class="social-footer social-footer-mobile">
                         <p>Follow us on</p>
                         <a href="" class="social-light-links" id="fb-light-link">
-                            <img src="img/l-fb.svg" alt="fb">
+                            <img src="img/d-fb.svg" alt="fb">
                         </a>
                         <a href="" class="social-light-links" id="tw-light-link">
-                            <img src="img/l-tw.svg" alt="tw">
+                            <img src="img/d-tw.svg" alt="tw">
                         </a>
                         <a href="" class="social-light-links">
-                            <img src="img/l-in.svg" alt="in">
+                            <img src="img/d-in.svg" alt="in">
                         </a>
                         <a href="" class="social-light-links">
-                            <img src="img/l-m.svg" alt="m">
+                            <img src="img/d-m.svg" alt="m">
                         </a>
                     </div>
                 </div>
