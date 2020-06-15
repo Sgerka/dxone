@@ -7885,6 +7885,8 @@ p {
     width: 100%; }
     #main-block .wraper-block-second .block-second .circle-img img {
       width: 100%; }
+    #main-block .wraper-block-second .block-second .circle-img .circle-items-grey {
+      filter: grayscale(1) opacity(0.2); }
     #main-block .wraper-block-second .block-second .circle-img #img-software-section {
       position: absolute;
       bottom: 13%;

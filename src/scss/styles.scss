@@ -221,6 +221,9 @@
                     img {
                         width: 100%;
                     }
+                    .circle-items-grey {
+                        filter:grayscale(1) opacity(.2)
+                    }
                     #img-software-section {
                         position: absolute;
                         bottom: 13%;

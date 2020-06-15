@@ -1,7 +1,16 @@
-<svg id="Trading_Tools" data-name="Trading Tools" xmlns="http://www.w3.org/2000/svg" width="44.735" height="35.648" viewBox="0 0 44.735 35.648">
-  <g id="Group_9" data-name="Group 9" transform="translate(7.124 32.45)">
-    <path id="Path_28" data-name="Path 28" d="M1537.423,1354.829h-13.361l-.477.643v1.911l.477.644h12.208Z" transform="translate(-1523.585 -1354.829)" fill="#e3e5e9"/>
-    <path id="Path_29" data-name="Path 29" d="M1555.471,1354.829h-12.434l-2.436,3.2h14.87l.477-.644v-1.911Z" transform="translate(-1525.782 -1354.829)" fill="#e3e5e9"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.368" height="40.933" viewBox="0 0 51.368 40.933">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f16a46"/>
+      <stop offset="0.498" stop-color="#ed337c"/>
+      <stop offset="1" stop-color="#8e489b"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_19034" data-name="Group 19034" transform="translate(-1515.405 -1317.568)">
+    <g id="Group_9" data-name="Group 9">
+      <path id="Path_28" data-name="Path 28" d="M1539.475,1354.829h-15.342l-.548.739v2.194l.548.739h14.018Z" fill="url(#linear-gradient)"/>
+      <path id="Path_29" data-name="Path 29" d="M1557.675,1354.829H1543.4l-2.8,3.672h17.074l.548-.739v-2.194Z" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Path_30" data-name="Path 30" d="M1566.773,1326.4l-.708-.982-15.432,8.444-.652-.257-8.446-16.034h-.892L1532.2,1333.6l-.652.257-15.432-8.444-.708.982,4.323,13.279,6.909,5.864-4.946.165,1.848,5.677.5.442h16.518l1.311-3.634-10.755.137,4.847-13.632,10.766.407-5.172,7.8,10.625.4-6.493,8.525h12.452l.5-.442,1.753-5.386-5.554.185,7.833-7.186Z" fill="url(#linear-gradient)"/>
   </g>
-  <path id="Path_30" data-name="Path 30" d="M1560.141,1325.257l-.616-.855-13.439,7.354-.568-.224-7.355-13.964h-.777l-7.356,13.964-.568.224-13.439-7.354-.616.855,3.765,11.565,6.017,5.107-4.308.144,1.61,4.944.437.385h14.385l1.142-3.165-9.367.12,4.221-11.872,9.376.354-4.5,6.788,9.253.35-5.655,7.424h10.844l.436-.385,1.527-4.691-4.837.161,6.822-6.258Z" transform="translate(-1515.405 -1317.568)" fill="#e3e5e9"/>
 </svg>
