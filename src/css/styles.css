@@ -8138,20 +8138,22 @@ p {
       margin-top: 25px;
       margin-bottom: 20px; }
     #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description h4 {
+      padding-bottom: 13px;
       color: #292929;
       text-align: center;
       font-weight: 700;
       line-height: 30px;
       text-transform: uppercase; }
     #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window {
-      margin-top: 13px;
       position: relative;
       overflow: hidden; }
       #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
         transform: translateY(0); }
       #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
-        height: 90%;
-        transform: translateY(-150%);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transform: translateY(-100%);
         transition: 0.7s;
         position: absolute;
         background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
@@ -8386,16 +8388,16 @@ footer {
     margin-bottom: 100px; }
     #main-block #welcome-block .wraper-block-customer .block-customer hr {
       margin-bottom: 30px; }
+    #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description h4 {
+      padding-bottom: 15px; }
     #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window {
-      margin-top: 13px;
       position: relative;
       overflow: hidden; }
       #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
         transform: translateY(0); }
       #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
-        height: 90%;
-        margin-top: 15px;
-        transform: translateY(-150%);
+        height: 100%;
+        transform: translateY(-100%);
         transition: 0.7s;
         position: absolute;
         background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
@@ -8411,9 +8413,6 @@ footer {
           font-size: 11px;
           font-weight: 400;
           line-height: 19px; }
-      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
-        padding-top: 15px;
-        padding-bottom: 15px; }
   #main-block #welcome-block .block-about-us {
     margin-bottom: 80px; }
     #main-block #welcome-block .block-about-us h2 {
@@ -8549,35 +8548,11 @@ footer {
     margin-bottom: 100px; }
     #main-block #welcome-block .block-customer hr {
       margin-top: 0px; }
+    #main-block #welcome-block .block-customer .customers-windows-description h4 {
+      padding-bottom: 13px; }
     #main-block #welcome-block .block-customer .customers-windows-description .customer-window {
-      margin-top: 13px;
       position: relative;
       overflow: hidden; }
-      #main-block #welcome-block .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
-        transform: translateY(0); }
-      #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background {
-        display: none;
-        height: 90%;
-        margin-top: 15px;
-        transform: translateY(-150%);
-        transition: 0.7s;
-        position: absolute;
-        background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
-        color: #fff;
-        padding: 20px; }
-        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
-          font-size: 14px;
-          font-weight: 700;
-          letter-spacing: 0.56px;
-          line-height: 19px;
-          text-align: center; }
-        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background p {
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 25px; }
-      #main-block #welcome-block .block-customer .customers-windows-description .customer-window img {
-        padding-top: 13px;
-        padding-bottom: 0px; }
   #main-block #welcome-block .block-about-us {
     margin-bottom: 65px; }
     #main-block #welcome-block .block-about-us h2 {

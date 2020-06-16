@@ -542,6 +542,7 @@ p {
                 }
                 .customers-windows-description {
                     h4 {
+                        padding-bottom: 13px;
                         color: #292929;
                         text-align: center;
                         font-weight: 700;
@@ -549,15 +550,16 @@ p {
                         text-transform: uppercase;
                     }
                     .customer-window {
-                        margin-top: 13px;
                         position: relative;
                         overflow: hidden;
                         &:hover .customer-window-background {
                             transform: translateY(0);
                         }
                         .customer-window-background {
-                            height: 90%;
-                            transform: translateY(-150%);
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            transform: translateY(-100%);
                             transition: 0.7s;
                             position: absolute;
                             background: $main-button-color;
@@ -902,17 +904,18 @@ footer {
                         margin-bottom: 30px;
                     }
                     .customers-windows-description {
+                        h4 {
+                            padding-bottom: 15px;
+                        }
                         .customer-window {
-                            margin-top: 13px;
                             position: relative;
                             overflow: hidden;
                             &:hover .customer-window-background {
                                 transform: translateY(0);
                             }
                             .customer-window-background {
-                                height: 90%;
-                                margin-top: 15px;
-                                transform: translateY(-150%);
+                                height: 100%;
+                                transform: translateY(-100%);
                                 transition: 0.7s;
                                 position: absolute;
                                 background: $main-button-color;
@@ -930,10 +933,6 @@ footer {
                                     font-weight: 400;
                                     line-height: 19px;
                                 }
-                            }
-                            img {
-                                padding-top: 15px;
-                                padding-bottom: 15px;
                             }
                         }
                     }
@@ -1150,40 +1149,12 @@ footer {
                     margin-top: 0px;
                 }
                 .customers-windows-description {
+                    h4 {
+                        padding-bottom: 13px;
+                    }
                     .customer-window {
-                        margin-top: 13px;
                         position: relative;
                         overflow: hidden;
-                        &:hover .customer-window-background {
-                            transform: translateY(0);
-                        }
-                        .customer-window-background {
-                            display: none;
-                            height: 90%;
-                            margin-top: 15px;
-                            transform: translateY(-150%);
-                            transition: 0.7s;
-                            position: absolute;
-                            background: $main-button-color;
-                            color: #fff;
-                            padding: 20px;
-                            h5 {
-                                font-size: 14px;
-                                font-weight: 700;
-                                letter-spacing: 0.56px;
-                                line-height: 19px;
-                                text-align: center;
-                            }
-                            p {
-                                font-size: 12px;
-                                font-weight: 400;
-                                line-height: 25px;
-                            }
-                        }
-                        img {
-                            padding-top: 13px;
-                            padding-bottom: 0px;
-                        }
                     }
                 }
             }
