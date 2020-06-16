@@ -2,12 +2,13 @@ const circle_items = $('.circle-items');
 const description_info = $('.description-info');
 let circle_animation_interval = 7000;
 let current_circle_element = 1;
-var i = 0;
+var animation_iteration = 0;
 var is_interval_set = false;
 var circle_loop = null;
+var jump_after_out = 1;
 
 function circle_animation() {
-    if (i > 0) {
+    if (animation_iteration > 0) {
         unHighlightElement($(circle_items[circle_items.length - 1]));
     }
     unHighlightElement($(circle_items[current_circle_element - 1]))
@@ -18,26 +19,21 @@ function circle_animation() {
     current_circle_element = current_circle_element + 1;
     if (current_circle_element === circle_items.length) {
         current_circle_element = 0;
-        i++;
+        animation_iteration++;
     }
 }
 
-if (!is_interval_set) {
-    circle_loop = setInterval(circle_animation, circle_animation_interval);
-    is_interval_set = true;
-}
-
-
-highlightElement($(circle_items[0]));
 
 function highlightElement(element) {
     $('.circle-items').addClass('circle-items-grey');
     element.removeClass('circle-items-grey');
 }
 
+
 function unHighlightElement(element) {
     element.addClass('circle-items-grey');
 }
+
 
 function showDependingElement(element) {
     description_info.each(function (info) {
@@ -50,6 +46,15 @@ function showDependingElement(element) {
     elToShow.classList.remove("d-none");
 }
 
+
+if (!is_interval_set) {
+    circle_loop = setInterval(circle_animation, circle_animation_interval);
+    is_interval_set = true;
+}
+
+highlightElement($(circle_items[0]));
+showDependingElement($(circle_items[0]));
+
 circle_items.each(function (item) {
     $(this).mouseover(function () {
         clearInterval(circle_loop);
@@ -61,11 +66,12 @@ circle_items.each(function (item) {
         if (!is_interval_set) {
             circle_loop = setInterval(circle_animation, circle_animation_interval);
             is_interval_set = true;
-            highlightElement($(circle_items[current_circle_element]));
+            let nextElement = $(circle_items).index($(this)) + jump_after_out < circle_items.length ? $(circle_items).index($(this)) + jump_after_out : 0;
+            highlightElement($(circle_items[nextElement]));
+            showDependingElement($(circle_items[nextElement]));
         }
         unHighlightElement($(this));
     })
-
 })
 
 
