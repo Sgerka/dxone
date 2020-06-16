@@ -7778,8 +7778,14 @@ p {
         height: 36px;
         margin-right: 9px;
         background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+        #main-header #main-header-nav #main-header-buttons .login-button:hover {
+          background-image: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
       #main-header #main-header-nav #main-header-buttons .register-button {
         border: 1px solid #fff; }
+        #main-header #main-header-nav #main-header-buttons .register-button:hover {
+          color: #000;
+          background-color: #fff;
+          border: 1px solid #000; }
 
 .header {
   width: 100%;
@@ -7845,9 +7851,15 @@ p {
         color: #fff;
         margin-right: 9px;
         background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+        #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .get-started-button:hover {
+          background-image: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
       #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button {
         color: #252525;
         border: 1px solid #252525; }
+        #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button:hover {
+          color: #fff;
+          background-color: #252525;
+          border: 1px solid #fff; }
     #main-block #welcome-block .wraper-block-first .block-first h1 {
       max-width: 450px;
       font-weight: 700;
@@ -7876,152 +7888,165 @@ p {
         #main-block #welcome-block .wraper-block-first .block-first .social .social-dark-links img {
           width: 29px; }
 
-#main-block .wraper-block-second .block-second {
-  height: 100%;
-  margin-bottom: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  #main-block .wraper-block-second .block-second .circle-img {
-    width: 100%; }
-    #main-block .wraper-block-second .block-second .circle-img img {
-      width: 100%; }
-    #main-block .wraper-block-second .block-second .circle-img .circle-items-grey {
-      filter: grayscale(1) opacity(0.2); }
-    #main-block .wraper-block-second .block-second .circle-img #img-software-section {
-      position: absolute;
-      bottom: 13%;
-      right: 13%; }
-    #main-block .wraper-block-second .block-second .circle-img #img-layout-section {
-      position: absolute;
-      bottom: 0%;
-      right: 46%; }
-    #main-block .wraper-block-second .block-second .circle-img #img-features-section {
-      position: absolute;
-      bottom: 13%;
-      left: 13%; }
-    #main-block .wraper-block-second .block-second .circle-img #img-crypto-section {
-      position: absolute;
-      bottom: 48%;
-      left: 2%; }
-    #main-block .wraper-block-second .block-second .circle-img #img-newsfeeds-section {
-      position: absolute;
-      top: 7%;
-      left: 13%; }
-    #main-block .wraper-block-second .block-second .circle-img #img-security-section {
-      position: absolute;
-      top: -5%;
-      left: 46%; }
-    #main-block .wraper-block-second .block-second .circle-img #img-solution-section {
-      position: absolute;
-      top: 7%;
-      right: 13%; }
-  #main-block .wraper-block-second .block-second .circle-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+#main-block #welcome-block .wraper-block-second {
+  background: url(../img/abstraction-circle.png) no-repeat;
+  background-position: left;
+  background-size: 30%; }
+  #main-block #welcome-block .wraper-block-second .block-second {
     height: 100%;
-    max-width: 409px;
-    max-height: 409px;
-    border: 1px solid #f3f3f3;
-    border-radius: 50%;
-    background-color: #f5f5f5;
-    opacity: 0.65;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center; }
-    #main-block .wraper-block-second .block-second .circle-logo img {
-      padding-bottom: 25px; }
-    #main-block .wraper-block-second .block-second .circle-logo span {
-      display: block;
-      max-width: 280px;
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: 0.98px;
-      line-height: 40px; }
-  #main-block .wraper-block-second .block-second .description {
-    padding: 0 30px; }
-    #main-block .wraper-block-second .block-second .description h3 {
-      padding-top: 3px;
-      padding-bottom: 40px;
-      text-transform: uppercase;
-      text-align: right;
-      overflow: hidden; }
-      #main-block .wraper-block-second .block-second .description h3:before {
-        content: '';
-        display: inline-block;
-        vertical-align: middle;
-        box-sizing: border-box;
-        width: 100%;
-        height: 3px;
-        background: #000;
-        margin-left: -100%;
-        margin-right: 25px; }
-      #main-block .wraper-block-second .block-second .description h3 .dark-bg {
-        color: #fff;
-        background: #000;
-        padding: 3px 5px 3px 10px; }
-      #main-block .wraper-block-second .block-second .description h3 .light-bg {
-        background: #f5f5f5;
-        padding: 3px 0px 3px 5px; }
-    #main-block .wraper-block-second .block-second .description .description-info {
-      margin-bottom: 25px; }
-      #main-block .wraper-block-second .block-second .description .description-info h2 {
-        font-weight: 700;
-        margin-bottom: 25px; }
-      #main-block .wraper-block-second .block-second .description .description-info p {
-        color: #000000;
-        font-weight: 400;
-        text-align: justify; }
-    #main-block .wraper-block-second .block-second .description .register-link {
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #main-block #welcome-block .wraper-block-second .block-second .circle-img {
+      width: 100%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img .circle-items {
+        z-index: 99; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img .circle-items-grey {
+        filter: grayscale(1) opacity(0.2); }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-dashboards-section {
+        position: absolute;
+        bottom: 46%;
+        right: 2%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-software-section {
+        position: absolute;
+        bottom: 13%;
+        right: 13%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-layout-section {
+        position: absolute;
+        bottom: -1%;
+        right: 46%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-features-section {
+        position: absolute;
+        bottom: 13%;
+        left: 13%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-crypto-section {
+        position: absolute;
+        bottom: 48%;
+        left: 2%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-newsfeeds-section {
+        position: absolute;
+        top: 7%;
+        left: 14%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-security-section {
+        position: absolute;
+        top: -7%;
+        left: 46%; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-solution-section {
+        position: absolute;
+        top: 7%;
+        right: 14%; }
+    #main-block #welcome-block .wraper-block-second .block-second .circle-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
-      display: block;
-      text-transform: uppercase;
-      text-align: right; }
-      #main-block .wraper-block-second .block-second .description .register-link:hover {
-        text-decoration: none; }
-      #main-block .wraper-block-second .block-second .description .register-link img {
-        width: 14px; }
-
-#main-block .wraper-graphs {
-  margin-bottom: 140px; }
-  #main-block .wraper-graphs .main-features-background {
-    width: 100%;
-    background: #fafafa;
-    margin-bottom: 115px; }
-    #main-block .wraper-graphs .main-features-background .block-third {
-      padding: 45px 30px; }
-      #main-block .wraper-graphs .main-features-background .block-third .main-features h3 {
+      height: 100%;
+      max-width: 409px;
+      max-height: 409px;
+      border: 1px solid #f3f3f3;
+      border-radius: 50%;
+      background-color: #f5f5f5;
+      opacity: 0.65;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-logo img {
+        padding-bottom: 25px; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-logo span {
+        display: block;
+        max-width: 280px;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0.98px;
+        line-height: 40px; }
+    #main-block #welcome-block .wraper-block-second .block-second .description {
+      padding: 0 30px; }
+      #main-block #welcome-block .wraper-block-second .block-second .description h3 {
+        padding-top: 3px;
+        padding-bottom: 40px;
         text-transform: uppercase;
-        text-align: right; }
-        #main-block .wraper-graphs .main-features-background .block-third .main-features h3 .dark-bg {
+        text-align: right;
+        overflow: hidden; }
+        #main-block #welcome-block .wraper-block-second .block-second .description h3:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          box-sizing: border-box;
+          width: 100%;
+          height: 3px;
+          background: #000;
+          margin-left: -100%;
+          margin-right: 25px; }
+        #main-block #welcome-block .wraper-block-second .block-second .description h3 .dark-bg {
           color: #fff;
           background: #000;
           padding: 3px 5px 3px 10px; }
-        #main-block .wraper-graphs .main-features-background .block-third .main-features h3 .light-bg {
+        #main-block #welcome-block .wraper-block-second .block-second .description h3 .light-bg {
           background: #f5f5f5;
           padding: 3px 0px 3px 5px; }
-      #main-block .wraper-graphs .main-features-background .block-third .main-features-description h2 {
+      #main-block #welcome-block .wraper-block-second .block-second .description .description-info {
+        margin-bottom: 25px; }
+        #main-block #welcome-block .wraper-block-second .block-second .description .description-info h2 {
+          font-weight: 700;
+          margin-bottom: 25px; }
+        #main-block #welcome-block .wraper-block-second .block-second .description .description-info p {
+          color: #000000;
+          font-weight: 400;
+          text-align: justify; }
+      #main-block #welcome-block .wraper-block-second .block-second .description .register-link {
+        width: 100%;
+        display: block;
+        text-transform: uppercase;
+        text-align: right; }
+        #main-block #welcome-block .wraper-block-second .block-second .description .register-link:hover {
+          text-decoration: none; }
+        #main-block #welcome-block .wraper-block-second .block-second .description .register-link img {
+          width: 14px; }
+
+#main-block #welcome-block .wraper-graphs {
+  margin-bottom: 140px;
+  background: url(../img/abstraction-graps-bottom.svg) left bottom no-repeat, url(../img/abstraction-graps-top.svg) top right no-repeat;
+  background-size: 40%, 60%; }
+  #main-block #welcome-block .wraper-graphs .main-features-background {
+    width: 100%;
+    background: #fafafa;
+    margin-bottom: 115px;
+    position: sticky;
+    top: 65px;
+    z-index: 1020; }
+    #main-block #welcome-block .wraper-graphs .main-features-background .block-third {
+      padding: 45px 30px; }
+      #main-block #welcome-block .wraper-graphs .main-features-background .block-third .main-features h3 {
+        text-transform: uppercase;
+        text-align: right; }
+        #main-block #welcome-block .wraper-graphs .main-features-background .block-third .main-features h3 .dark-bg {
+          color: #fff;
+          background: #000;
+          padding: 3px 5px 3px 10px; }
+        #main-block #welcome-block .wraper-graphs .main-features-background .block-third .main-features h3 .light-bg {
+          background: #f5f5f5;
+          padding: 3px 0px 3px 5px; }
+      #main-block #welcome-block .wraper-graphs .main-features-background .block-third .main-features-description h2 {
         border-left: 3px solid #000;
         padding-left: 50px;
         margin-left: 15px;
         text-transform: uppercase;
         color: #262626;
         font-weight: 500; }
-  #main-block .wraper-graphs .block-graphs {
+  #main-block #welcome-block .wraper-graphs .block-graphs {
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.07);
     background-color: #fefefe;
     padding: 33px;
     margin-bottom: 110px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
       color: #dedede;
       font-size: 82px;
       font-weight: 700;
       letter-spacing: 2.87px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description h2 {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description h2 {
       position: relative;
       padding-bottom: 35px;
       padding-top: 30px;
@@ -8030,7 +8055,7 @@ p {
       font-weight: 700;
       line-height: 43px;
       overflow: hidden; }
-      #main-block .wraper-graphs .block-graphs .graphs-description h2:after {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description h2:after {
         content: '';
         display: inline-block;
         vertical-align: middle;
@@ -8043,41 +8068,41 @@ p {
         background: #000;
         margin-left: -100%;
         margin-right: 25px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description p {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description p {
       color: #1c1c1c;
       font-weight: 400;
       padding-top: 38px;
       padding-bottom: 43px;
       margin-bottom: 0; }
-    #main-block .wraper-graphs .block-graphs .graphs-description .register-link {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .register-link {
       width: 100%;
       display: block;
       text-transform: uppercase;
       padding-bottom: 20px; }
-      #main-block .wraper-graphs .block-graphs .graphs-description .register-link:hover {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .register-link:hover {
         text-decoration: none; }
-      #main-block .wraper-graphs .block-graphs .graphs-description .register-link img {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .register-link img {
         padding-bottom: 3px; }
-    #main-block .wraper-graphs .block-graphs .title-mobile {
+    #main-block #welcome-block .wraper-graphs .block-graphs .title-mobile {
       display: none; }
-    #main-block .wraper-graphs .block-graphs .graphs-img img {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-img img {
       width: 100%; }
-    #main-block .wraper-graphs .block-graphs .graphs-description-reverse {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse {
       text-align: right; }
-      #main-block .wraper-graphs .block-graphs .graphs-description-reverse img {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse img {
         float: right; }
-      #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2 {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse h2 {
         clear: both; }
-        #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
+        #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
           margin-left: 25px;
           margin-right: -100%; }
-      #main-block .wraper-graphs .block-graphs .graphs-description-reverse .register-link img {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse .register-link img {
         padding-top: 4px; }
 
-#main-block .wraper-block-customer {
+#main-block #welcome-block .wraper-block-customer {
   padding-top: 35px;
   background: linear-gradient(to bottom, #f8f8f8 44%, #fff 0%); }
-  #main-block .wraper-block-customer .block-customer {
+  #main-block #welcome-block .wraper-block-customer .block-customer {
     margin-bottom: 140px;
     height: 100%;
     background-color: #fff;
@@ -8086,12 +8111,12 @@ p {
     padding-right: 58px;
     padding-top: 41px;
     padding-bottom: 41px; }
-    #main-block .wraper-block-customer .block-customer .customers h3 {
+    #main-block #welcome-block .wraper-block-customer .block-customer .customers h3 {
       padding-top: 3px;
       padding-bottom: 40px;
       text-transform: uppercase;
       overflow: hidden; }
-      #main-block .wraper-block-customer .block-customer .customers h3:after {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers h3:after {
         content: '';
         display: inline-block;
         vertical-align: middle;
@@ -8101,31 +8126,31 @@ p {
         background: #000;
         margin-right: -100%;
         margin-left: 25px; }
-      #main-block .wraper-block-customer .block-customer .customers h3 .dark-bg {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers h3 .dark-bg {
         color: #fff;
         background: #000;
         padding: 3px 5px 3px 10px; }
-      #main-block .wraper-block-customer .block-customer .customers h3 .light-bg {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers h3 .light-bg {
         background: #f5f5f5;
         padding: 3px 0px 3px 5px; }
-    #main-block .wraper-block-customer .block-customer hr {
+    #main-block #welcome-block .wraper-block-customer .block-customer hr {
       height: 2px;
       background-color: #f8f8f8;
       margin-top: 25px;
       margin-bottom: 20px; }
-    #main-block .wraper-block-customer .block-customer .customers-windows-description h4 {
+    #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description h4 {
       color: #292929;
       text-align: center;
       font-weight: 700;
       line-height: 30px;
       text-transform: uppercase; }
-    #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window {
+    #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window {
       margin-top: 13px;
       position: relative;
       overflow: hidden; }
-      #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
         transform: translateY(0); }
-      #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
         height: 90%;
         transform: translateY(-150%);
         transition: 0.7s;
@@ -8133,71 +8158,71 @@ p {
         background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
         color: #fff;
         padding: 20px; }
-        #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.56px;
           line-height: 19px;
           text-align: center; }
-        #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background p {
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background p {
           font-size: 12px;
           font-weight: 400;
           line-height: 25px; }
-      #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
         width: 100%; }
 
-#main-block .block-about-us {
+#main-block #welcome-block .block-about-us {
   height: 100%;
   margin-bottom: 100px; }
-  #main-block .block-about-us h2 {
+  #main-block #welcome-block .block-about-us h2 {
     padding-bottom: 15px;
     margin-bottom: 0;
     font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center; }
-  #main-block .block-about-us p {
+  #main-block #welcome-block .block-about-us p {
     text-align: center;
     padding-bottom: 45px;
     margin-bottom: 0; }
-  #main-block .block-about-us .about-us-video {
+  #main-block #welcome-block .block-about-us .about-us-video {
     width: 70%;
     margin: 0 auto;
     padding-bottom: 25px; }
-    #main-block .block-about-us .about-us-video video {
+    #main-block #welcome-block .block-about-us .about-us-video video {
       width: 100%; }
-  #main-block .block-about-us hr {
+  #main-block #welcome-block .block-about-us hr {
     width: 200px;
     text-align: center;
     height: 2px;
     background: #707070; }
 
-#main-block .block-solution {
+#main-block #welcome-block .block-solution {
   height: 100%;
   margin-bottom: 100px; }
-  #main-block .block-solution h2 {
+  #main-block #welcome-block .block-solution h2 {
     font-weight: 700;
     line-height: 43px;
     text-transform: uppercase; }
-  #main-block .block-solution p {
+  #main-block #welcome-block .block-solution p {
     padding-top: 20px;
     text-align: justify; }
-  #main-block .block-solution img {
+  #main-block #welcome-block .block-solution img {
     width: 100%; }
 
-#main-block .wraper-block-feedback {
+#main-block #welcome-block .wraper-block-feedback {
   background: #000; }
-  #main-block .wraper-block-feedback .block-feedback {
+  #main-block #welcome-block .wraper-block-feedback .block-feedback {
     padding-top: 60px;
     padding-bottom: 40px; }
-    #main-block .wraper-block-feedback .block-feedback .feedback-description {
+    #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description {
       width: 90%;
       margin: 0 auto;
       color: #fbfbfb;
       text-align: center; }
-      #main-block .wraper-block-feedback .block-feedback .feedback-description h2 {
+      #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description h2 {
         padding-bottom: 43px; }
-      #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
+      #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
         display: flex;
         justify-content: center;
         font-weight: 600;
@@ -8205,7 +8230,7 @@ p {
         letter-spacing: 0.49px;
         line-height: 19px;
         padding-top: 25px; }
-        #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button .feedback-button {
+        #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button .feedback-button {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -8216,38 +8241,40 @@ p {
           color: #fff;
           background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
-        #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button a:hover {
+          #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button .feedback-button:hover {
+            background-image: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+        #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button a:hover {
           text-decoration: none; }
 
-#main-block .block-partners {
+#main-block #welcome-block .block-partners {
   padding-top: 100px;
   padding-bottom: 132px;
   text-align: center; }
-  #main-block .block-partners h2 {
+  #main-block #welcome-block .block-partners h2 {
     padding-bottom: 99px;
     color: #292929;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase; }
-  #main-block .block-partners img {
+  #main-block #welcome-block .block-partners img {
     width: 100%;
     filter: grayscale(1); }
-    #main-block .block-partners img:hover {
+    #main-block #welcome-block .block-partners img:hover {
       filter: none; }
-  #main-block .block-partners .partner-section-input {
+  #main-block #welcome-block .block-partners .partner-section-input {
     width: 100%;
     padding-top: 99px; }
-    #main-block .block-partners .partner-section-input p {
+    #main-block #welcome-block .block-partners .partner-section-input p {
       text-align: right;
       font-size: 20px;
       margin-bottom: 0;
       color: #292929; }
-    #main-block .block-partners .partner-section-input .input-group .form-control {
+    #main-block #welcome-block .block-partners .partner-section-input .input-group .form-control {
       border: 1px solid #292929;
       border-radius: 0;
       font-size: 20px;
       max-width: 360px; }
-    #main-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
+    #main-block #welcome-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
       background-color: #292929;
       border: 1px solid #292929;
       font-size: 20px;
@@ -8283,6 +8310,12 @@ footer {
     footer .footer-logo p {
       font-size: 14px;
       text-align: center; }
+
+@media (min-width: 2360px) {
+  #main-block #welcome-block .wraper-graphs {
+    background-size: 40%, 70%; }
+  #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
+    height: 100%; } }
 
 @media (max-width: 1919px) {
   h1 {
@@ -8320,47 +8353,47 @@ footer {
     #main-block #welcome-block .wraper-block-first .block-first .social {
       position: relative;
       padding-bottom: 20px; }
-  #main-block .wraper-block-second .block-second .circle-logo {
+  #main-block #welcome-block .wraper-block-second .block-second .circle-logo {
     width: 100%;
     height: 100%;
     max-width: 350px;
     max-height: 350px; }
-    #main-block .wraper-block-second .block-second .circle-logo img {
+    #main-block #welcome-block .wraper-block-second .block-second .circle-logo img {
       max-width: 120px; }
-    #main-block .wraper-block-second .block-second .circle-logo span {
+    #main-block #welcome-block .wraper-block-second .block-second .circle-logo span {
       max-width: 240px;
       font-size: 24px; }
-  #main-block .wraper-graphs .main-features-background .block-third {
+  #main-block #welcome-block .wraper-graphs .main-features-background .block-third {
     padding: 35px 30px; }
-  #main-block .wraper-graphs .block-graphs {
+  #main-block #welcome-block .wraper-graphs .block-graphs {
     padding: 19px 19px 15px 19px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
       font-size: 51px;
       font-weight: 700;
       letter-spacing: 1.78px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description h2 {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description h2 {
       padding-top: 15px;
       padding-bottom: 15px;
       font-weight: 700;
       line-height: 43px; }
-      #main-block .wraper-graphs .block-graphs .graphs-description h2:after {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description h2:after {
         left: 30%; }
-    #main-block .wraper-graphs .block-graphs .graphs-description p {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description p {
       padding-top: 15px;
       padding-bottom: 15px; }
-    #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
+    #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
       left: 60%; }
-  #main-block .wraper-block-customer .block-customer {
+  #main-block #welcome-block .wraper-block-customer .block-customer {
     margin-bottom: 100px; }
-    #main-block .wraper-block-customer .block-customer hr {
+    #main-block #welcome-block .wraper-block-customer .block-customer hr {
       margin-bottom: 30px; }
-    #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window {
+    #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window {
       margin-top: 13px;
       position: relative;
       overflow: hidden; }
-      #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
         transform: translateY(0); }
-      #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
         height: 90%;
         margin-top: 15px;
         transform: translateY(-150%);
@@ -8369,56 +8402,56 @@ footer {
         background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
         color: #fff;
         padding: 20px; }
-        #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
           font-size: 12px;
           font-weight: 700;
           letter-spacing: 0.56px;
           line-height: 19px;
           text-align: center; }
-        #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background p {
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background p {
           font-size: 11px;
           font-weight: 400;
           line-height: 19px; }
-      #main-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
         padding-top: 15px;
         padding-bottom: 15px; }
-  #main-block .block-about-us {
+  #main-block #welcome-block .block-about-us {
     margin-bottom: 80px; }
-    #main-block .block-about-us h2 {
+    #main-block #welcome-block .block-about-us h2 {
       padding-bottom: 13px; }
-    #main-block .block-about-us p {
+    #main-block #welcome-block .block-about-us p {
       padding-bottom: 26px; }
-    #main-block .block-about-us .about-us-video {
+    #main-block #welcome-block .block-about-us .about-us-video {
       padding-bottom: 20px; }
-  #main-block .block-solution {
+  #main-block #welcome-block .block-solution {
     margin-bottom: 80px; }
-    #main-block .block-solution p {
+    #main-block #welcome-block .block-solution p {
       padding-top: 5px; }
-  #main-block .wraper-block-feedback .block-feedback .feedback-description h2 {
+  #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description h2 {
     padding-bottom: 10px; }
-  #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
+  #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
     padding-top: 10px; }
-  #main-block .block-partners {
+  #main-block #welcome-block .block-partners {
     padding-top: 100px;
     padding-bottom: 100px; }
-    #main-block .block-partners h2 {
+    #main-block #welcome-block .block-partners h2 {
       padding-bottom: 70px; }
-    #main-block .block-partners img {
+    #main-block #welcome-block .block-partners img {
       width: 100%; }
-    #main-block .block-partners .partner-section-input {
+    #main-block #welcome-block .block-partners .partner-section-input {
       width: 100%;
       padding-top: 99px; }
-      #main-block .block-partners .partner-section-input p {
+      #main-block #welcome-block .block-partners .partner-section-input p {
         text-align: right;
         font-size: 20px;
         margin-bottom: 0;
         color: #292929; }
-      #main-block .block-partners .partner-section-input .input-group .form-control {
+      #main-block #welcome-block .block-partners .partner-section-input .input-group .form-control {
         border: 1px solid #292929;
         border-radius: 0;
         font-size: 20px;
         max-width: 360px; }
-      #main-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
+      #main-block #welcome-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
         background-color: #292929;
         border: 1px solid #292929;
         font-size: 20px; } }
@@ -8457,69 +8490,73 @@ footer {
         padding-bottom: 20px; }
         #main-block #welcome-block .wraper-block-first .block-first .social:after {
           display: inline-block; }
-  #main-block .wraper-block-second .block-second {
+  #main-block #welcome-block .wraper-block-second .block-second {
     margin-bottom: 0px; }
-    #main-block .wraper-block-second .block-second .circle-logo {
+    #main-block #welcome-block .wraper-block-second .block-second .circle-img .circle-items {
+      width: 32px; }
+    #main-block #welcome-block .wraper-block-second .block-second .circle-logo {
       width: 100%;
       height: 100%;
-      max-width: 282px;
-      max-height: 282px; }
-      #main-block .wraper-block-second .block-second .circle-logo img {
-        max-width: 105px; }
-      #main-block .wraper-block-second .block-second .circle-logo span {
-        max-width: 200px;
-        font-size: 18px;
+      max-width: 200px;
+      max-height: 200px; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-logo img {
+        max-width: 80px;
+        padding-bottom: 15px; }
+      #main-block #welcome-block .wraper-block-second .block-second .circle-logo span {
+        max-width: 130px;
+        font-size: 12px;
         font-weight: 600;
         letter-spacing: 0.63px;
-        line-height: 26px; }
-    #main-block .wraper-block-second .block-second .description h3 {
-      padding-bottom: 25px;
-      font-size: 22px; }
-    #main-block .wraper-block-second .block-second .description .description-info p {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 25px; }
-  #main-block .wraper-graphs {
-    margin-bottom: 100px; }
-    #main-block .wraper-graphs .main-features-background {
+        line-height: 18px; }
+  #main-block #welcome-block .wraper-block-second .description h3 {
+    padding-bottom: 25px;
+    font-size: 22px; }
+  #main-block #welcome-block .wraper-block-second .description .description-info p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px; }
+  #main-block #welcome-block .wraper-graphs {
+    margin-bottom: 100px;
+    background: none; }
+    #main-block #welcome-block .wraper-graphs .main-features-background {
       margin-bottom: 55px; }
-    #main-block .wraper-graphs .block-graphs {
+    #main-block #welcome-block .wraper-graphs .block-graphs {
       padding: 19px 19px 15px 19px;
       margin-bottom: 65px; }
-      #main-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
         font-size: 29px;
         font-weight: 700;
         letter-spacing: 1.78px; }
-      #main-block .wraper-graphs .block-graphs .graphs-description h2 {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description h2 {
         padding-top: 0px;
         padding-bottom: 10px;
         font-weight: 700;
         line-height: 43px; }
-        #main-block .wraper-graphs .block-graphs .graphs-description h2:after {
+        #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description h2:after {
           left: 30%; }
-      #main-block .wraper-graphs .block-graphs .graphs-description p {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description p {
         padding-top: 10px;
         padding-bottom: 10px;
         line-height: 25px; }
-      #main-block .wraper-graphs .block-graphs .graphs-description .register-link {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .register-link {
         padding-bottom: 0; }
-      #main-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
+      #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
         left: 60%; }
-  #main-block .block-customer {
+  #main-block #welcome-block .block-customer {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 32px;
     padding-bottom: 50px;
     margin-bottom: 100px; }
-    #main-block .block-customer hr {
+    #main-block #welcome-block .block-customer hr {
       margin-top: 0px; }
-    #main-block .block-customer .customers-windows-description .customer-window {
+    #main-block #welcome-block .block-customer .customers-windows-description .customer-window {
       margin-top: 13px;
       position: relative;
       overflow: hidden; }
-      #main-block .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
+      #main-block #welcome-block .block-customer .customers-windows-description .customer-window:hover .customer-window-background {
         transform: translateY(0); }
-      #main-block .block-customer .customers-windows-description .customer-window .customer-window-background {
+      #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background {
         display: none;
         height: 90%;
         margin-top: 15px;
@@ -8529,68 +8566,68 @@ footer {
         background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
         color: #fff;
         padding: 20px; }
-        #main-block .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
+        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.56px;
           line-height: 19px;
           text-align: center; }
-        #main-block .block-customer .customers-windows-description .customer-window .customer-window-background p {
+        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background p {
           font-size: 12px;
           font-weight: 400;
           line-height: 25px; }
-      #main-block .block-customer .customers-windows-description .customer-window img {
+      #main-block #welcome-block .block-customer .customers-windows-description .customer-window img {
         padding-top: 13px;
         padding-bottom: 0px; }
-  #main-block .block-about-us {
+  #main-block #welcome-block .block-about-us {
     margin-bottom: 65px; }
-    #main-block .block-about-us h2 {
+    #main-block #welcome-block .block-about-us h2 {
       padding-bottom: 13px; }
-    #main-block .block-about-us p {
+    #main-block #welcome-block .block-about-us p {
       padding-bottom: 26px; }
-    #main-block .block-about-us .about-us-video {
+    #main-block #welcome-block .block-about-us .about-us-video {
       padding-bottom: 20px; }
-    #main-block .block-about-us hr {
+    #main-block #welcome-block .block-about-us hr {
       width: 200px;
       text-align: center;
       height: 3px;
       background: #707070; }
-  #main-block .block-solution {
+  #main-block #welcome-block .block-solution {
     margin-bottom: 70px; }
-    #main-block .block-solution h2 {
+    #main-block #welcome-block .block-solution h2 {
       line-height: 35px;
       max-width: 330px; }
-    #main-block .block-solution p {
+    #main-block #welcome-block .block-solution p {
       padding-top: 7px;
       line-height: 25px; }
-  #main-block .wraper-block-feedback .block-feedback {
+  #main-block #welcome-block .wraper-block-feedback .block-feedback {
     padding-top: 60px;
     padding-bottom: 40px; }
-    #main-block .wraper-block-feedback .block-feedback .feedback-description h2 {
+    #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description h2 {
       padding-bottom: 20px; }
-    #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
+    #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
       padding-top: 15px; }
-  #main-block .block-partners {
+  #main-block #welcome-block .block-partners {
     padding-top: 70px;
     padding-bottom: 80px; }
-    #main-block .block-partners h2 {
+    #main-block #welcome-block .block-partners h2 {
       padding-bottom: 70px; }
-    #main-block .block-partners img {
+    #main-block #welcome-block .block-partners img {
       width: 100%; }
-    #main-block .block-partners .partner-section-input {
+    #main-block #welcome-block .block-partners .partner-section-input {
       width: 100%;
       padding-top: 99px; }
-      #main-block .block-partners .partner-section-input p {
+      #main-block #welcome-block .block-partners .partner-section-input p {
         text-align: right;
         font-size: 20px;
         margin-bottom: 0;
         color: #292929; }
-      #main-block .block-partners .partner-section-input .input-group .form-control {
+      #main-block #welcome-block .block-partners .partner-section-input .input-group .form-control {
         border: 1px solid #292929;
         border-radius: 0;
         font-size: 20px;
         max-width: 360px; }
-      #main-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
+      #main-block #welcome-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
         background-color: #292929;
         border: 1px solid #292929;
         font-size: 20px; } }
@@ -8649,11 +8686,14 @@ footer {
   #main-block #welcome-block .wraper-block-second .block-second {
     display: none; }
   #main-block #welcome-block .wraper-graphs {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    background: none; }
     #main-block #welcome-block .wraper-graphs .main-features-background {
       width: 100%;
       background: fff;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      position: relative;
+      z-index: 99; }
       #main-block #welcome-block .wraper-graphs .main-features-background .block-third {
         padding-top: 30px;
         padding-bottom: 10px; }
@@ -8720,118 +8760,118 @@ footer {
           #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
             margin-left: 25px;
             margin-right: -100%; }
-  #main-block .block-customer {
+  #main-block #welcome-block .block-customer {
     margin-bottom: 20px;
     height: 100%;
     box-shadow: none;
     padding-left: 58px;
     padding-right: 58px;
     padding-bottom: 0px; }
-    #main-block .block-customer .customers h3 {
+    #main-block #welcome-block .block-customer .customers h3 {
       text-align: center; }
-      #main-block .block-customer .customers h3:after {
+      #main-block #welcome-block .block-customer .customers h3:after {
         content: '';
         display: none; }
-    #main-block .block-customer .customers h2 {
+    #main-block #welcome-block .block-customer .customers h2 {
       display: none; }
-    #main-block .block-customer lottie-player {
+    #main-block #welcome-block .block-customer lottie-player {
       display: none; }
-    #main-block .block-customer hr {
+    #main-block #welcome-block .block-customer hr {
       display: none; }
-    #main-block .block-customer .customers-windows-description h4 {
+    #main-block #welcome-block .block-customer .customers-windows-description h4 {
       color: #292929;
       text-align: center;
       font-weight: 700;
       line-height: 30px;
       text-transform: uppercase; }
-    #main-block .block-customer .customers-windows-description .customer-window {
+    #main-block #welcome-block .block-customer .customers-windows-description .customer-window {
       margin-top: 13px;
       position: relative;
       overflow: hidden; }
-      #main-block .block-customer .customers-windows-description .customer-window .customer-window-background {
+      #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background {
         display: none; }
-        #main-block .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
+        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.56px;
           line-height: 19px;
           text-align: center; }
-        #main-block .block-customer .customers-windows-description .customer-window .customer-window-background p {
+        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background p {
           font-size: 12px;
           font-weight: 400;
           line-height: 25px; }
-      #main-block .block-customer .customers-windows-description .customer-window img {
+      #main-block #welcome-block .block-customer .customers-windows-description .customer-window img {
         padding-top: 15px;
         padding-bottom: 21px; }
-  #main-block .block-about-us {
+  #main-block #welcome-block .block-about-us {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 5px; }
-    #main-block .block-about-us h2 {
+    #main-block #welcome-block .block-about-us h2 {
       font-size: 24px;
       padding-bottom: 12px; }
-    #main-block .block-about-us p {
+    #main-block #welcome-block .block-about-us p {
       padding-bottom: 20px; }
-    #main-block .block-about-us .about-us-video {
+    #main-block #welcome-block .block-about-us .about-us-video {
       width: 100%;
       padding-bottom: 4px; }
-      #main-block .block-about-us .about-us-video video {
+      #main-block #welcome-block .block-about-us .about-us-video video {
         padding: 0 38px; }
-    #main-block .block-about-us hr {
+    #main-block #welcome-block .block-about-us hr {
       width: 80px;
       height: 1px; }
-  #main-block .block-solution {
+  #main-block #welcome-block .block-solution {
     height: 100%;
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px; }
-    #main-block .block-solution h2 {
+    #main-block #welcome-block .block-solution h2 {
       font-size: 24px;
       text-align: center; }
-    #main-block .block-solution p {
+    #main-block #welcome-block .block-solution p {
       padding-top: 10px;
       font-size: 14px; }
-    #main-block .block-solution img {
+    #main-block #welcome-block .block-solution img {
       display: none; }
-  #main-block .wraper-block-feedback .block-feedback {
+  #main-block #welcome-block .wraper-block-feedback .block-feedback {
     padding: 20px; }
-    #main-block .wraper-block-feedback .block-feedback .feedback-description {
+    #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description {
       width: 100%;
       text-align: justify; }
-      #main-block .wraper-block-feedback .block-feedback .feedback-description h2 {
+      #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description h2 {
         font-size: 17px;
         padding-bottom: 20px;
         text-align: center;
         font-weight: 700; }
-      #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
+      #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button {
         font-size: 12px;
         padding-top: 0px;
         padding-bottom: 10px; }
-        #main-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button .feedback-button {
+        #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button .feedback-button {
           height: 40px;
           width: 150px; }
-  #main-block .block-partners {
+  #main-block #welcome-block .block-partners {
     padding-top: 40px;
     padding-bottom: 30px; }
-    #main-block .block-partners h2 {
+    #main-block #welcome-block .block-partners h2 {
       padding-bottom: 25px;
       font-size: 24px; }
-    #main-block .block-partners img {
+    #main-block #welcome-block .block-partners img {
       width: 100%; }
-    #main-block .block-partners .partner-section-input {
+    #main-block #welcome-block .block-partners .partner-section-input {
       padding-top: 50px;
       padding-bottom: 10px; }
-      #main-block .block-partners .partner-section-input p {
+      #main-block #welcome-block .block-partners .partner-section-input p {
         text-align: center;
         font-size: 16px;
         font-weight: 600;
         padding-bottom: 15px; }
-      #main-block .block-partners .partner-section-input .input-group {
+      #main-block #welcome-block .block-partners .partner-section-input .input-group {
         margin: 0 auto;
         max-width: 330px; }
-        #main-block .block-partners .partner-section-input .input-group .form-control {
+        #main-block #welcome-block .block-partners .partner-section-input .input-group .form-control {
           font-size: 16px; }
-        #main-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
+        #main-block #welcome-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
           background-color: #292929;
           border: 1px solid #292929;
           font-size: 16px; }
