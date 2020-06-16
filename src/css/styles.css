@@ -8691,7 +8691,7 @@ footer {
       width: 100%;
       background: fff;
       margin-bottom: 0;
-      position: relative;
+      position: inherit;
       z-index: 99; }
       #main-block #welcome-block .wraper-graphs .main-features-background .block-third {
         padding-top: 30px;
@@ -8826,7 +8826,8 @@ footer {
     padding-right: 20px; }
     #main-block #welcome-block .block-solution h2 {
       font-size: 24px;
-      text-align: center; }
+      text-align: center;
+      margin: 0 auto 8px; }
     #main-block #welcome-block .block-solution p {
       padding-top: 10px;
       font-size: 14px; }
@@ -8877,11 +8878,11 @@ footer {
   footer .footer-menu-link {
     text-decoration: none;
     color: #fff;
-    text-align-last: left; }
+    text-align: left; }
     footer .footer-menu-link:hover {
       text-decoration: none; }
     footer .footer-menu-link p {
-      text-align-last: left; }
+      text-align: left; }
   footer .social-footer-mobile {
     text-align: center;
     padding-top: 20px;

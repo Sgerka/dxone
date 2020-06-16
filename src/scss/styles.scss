@@ -1359,7 +1359,7 @@ footer {
                     width: 100%;
                     background: fff;
                     margin-bottom: 0;
-                    position: relative;
+                    position: inherit;
                     z-index: 99;
                     .block-third {
                         padding-top: 30px;
@@ -1551,6 +1551,7 @@ footer {
                 h2 {
                     font-size: 24px;
                     text-align: center;
+                    margin: 0 auto 8px;
                 }
                 p {
                     padding-top: 10px;
@@ -1625,12 +1626,12 @@ footer {
         .footer-menu-link {
             text-decoration: none;
             color: #fff;
-            text-align-last: left;
+            text-align: left;
             &:hover {
                 text-decoration: none;
             }
             p {
-                text-align-last: left;
+                text-align: left;
             }
         }
         .social-footer-mobile {
