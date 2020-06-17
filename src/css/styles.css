@@ -7789,7 +7789,7 @@ p {
           height: 100%;
           opacity: .5;
           filter: blur(30px);
-          transform: translateX(-120px) skewX(-15deg); }
+          transform: translateX(-110px) skewX(-15deg); }
         #main-header #main-header-nav #main-header-buttons .login-button:after {
           content: '';
           display: block;
@@ -7799,16 +7799,15 @@ p {
           height: 100%;
           opacity: 0;
           filter: blur(5px);
-          transform: translateX(-120px) skewX(-15deg); }
+          transform: translateX(-110px) skewX(-15deg); }
         #main-header #main-header-nav #main-header-buttons .login-button:hover {
-          background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
           cursor: pointer; }
           #main-header #main-header-nav #main-header-buttons .login-button:hover:before {
-            transform: translateX(120px) skewX(-15deg);
+            transform: translateX(100px) skewX(-15deg);
             opacity: 0.6;
             transition: .7s; }
           #main-header #main-header-nav #main-header-buttons .login-button:hover:after {
-            transform: translateX(120px) skewX(-15deg);
+            transform: translateX(100px) skewX(-15deg);
             opacity: 1;
             transition: .7s; }
       #main-header #main-header-nav #main-header-buttons .register-button {
@@ -7990,7 +7989,9 @@ p {
         letter-spacing: 0.98px;
         line-height: 40px; }
     #main-block #welcome-block .wraper-block-second .block-second .description {
-      padding: 0 30px; }
+      padding-top: 30px;
+      padding-right: 30px;
+      padding-left: 30px; }
       #main-block #welcome-block .wraper-block-second .block-second .description h3 {
         padding-top: 3px;
         padding-bottom: 40px;
@@ -8200,31 +8201,34 @@ p {
       #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
         width: 100%; }
 
-#main-block #welcome-block .block-about-us {
-  height: 100%;
-  margin-bottom: 100px; }
-  #main-block #welcome-block .block-about-us h2 {
-    padding-bottom: 15px;
-    margin-bottom: 0;
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center; }
-  #main-block #welcome-block .block-about-us p {
-    text-align: center;
-    padding-bottom: 45px;
-    margin-bottom: 0; }
-  #main-block #welcome-block .block-about-us .about-us-video {
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 25px; }
-    #main-block #welcome-block .block-about-us .about-us-video video {
-      width: 100%; }
-  #main-block #welcome-block .block-about-us hr {
-    width: 200px;
-    text-align: center;
-    height: 2px;
-    background: #707070; }
+#main-block #welcome-block .wraper-block-about-us {
+  background: url(../img/background_video_left.svg) bottom left no-repeat, url(../img/background_video_right.svg) top right no-repeat;
+  background-size: 40%, 60%; }
+  #main-block #welcome-block .wraper-block-about-us .block-about-us {
+    height: 100%;
+    margin-bottom: 100px; }
+    #main-block #welcome-block .wraper-block-about-us .block-about-us h2 {
+      padding-bottom: 15px;
+      margin-bottom: 0;
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center; }
+    #main-block #welcome-block .wraper-block-about-us .block-about-us p {
+      text-align: center;
+      padding-bottom: 45px;
+      margin-bottom: 0; }
+    #main-block #welcome-block .wraper-block-about-us .block-about-us .about-us-video {
+      width: 70%;
+      margin: 0 auto;
+      padding-bottom: 25px; }
+      #main-block #welcome-block .wraper-block-about-us .block-about-us .about-us-video video {
+        width: 100%; }
+    #main-block #welcome-block .wraper-block-about-us .block-about-us hr {
+      width: 200px;
+      text-align: center;
+      height: 2px;
+      background: #707070; }
 
 #main-block #welcome-block .block-solution {
   height: 100%;
@@ -8341,6 +8345,9 @@ footer {
       text-align: center; }
 
 @media (min-width: 2360px) {
+  #main-block #welcome-block .wraper-block-first .block-first .social:after {
+    left: 0;
+    width: 135%; }
   #main-block #welcome-block .wraper-graphs {
     background-size: 40%, 70%; }
   #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background {
@@ -8446,13 +8453,13 @@ footer {
           font-size: 11px;
           font-weight: 400;
           line-height: 19px; }
-  #main-block #welcome-block .block-about-us {
+  #main-block #welcome-block .wraper-block-about-us .block-about-us {
     margin-bottom: 80px; }
-    #main-block #welcome-block .block-about-us h2 {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us h2 {
       padding-bottom: 13px; }
-    #main-block #welcome-block .block-about-us p {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us p {
       padding-bottom: 26px; }
-    #main-block #welcome-block .block-about-us .about-us-video {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us .about-us-video {
       padding-bottom: 20px; }
   #main-block #welcome-block .block-solution {
     margin-bottom: 80px; }
@@ -8599,15 +8606,15 @@ footer {
           font-size: 7px;
           font-weight: 400;
           line-height: 12px; }
-  #main-block #welcome-block .block-about-us {
+  #main-block #welcome-block .wraper-block-about-us .block-about-us {
     margin-bottom: 65px; }
-    #main-block #welcome-block .block-about-us h2 {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us h2 {
       padding-bottom: 13px; }
-    #main-block #welcome-block .block-about-us p {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us p {
       padding-bottom: 26px; }
-    #main-block #welcome-block .block-about-us .about-us-video {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us .about-us-video {
       padding-bottom: 20px; }
-    #main-block #welcome-block .block-about-us hr {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us hr {
       width: 200px;
       text-align: center;
       height: 3px;
@@ -8837,21 +8844,21 @@ footer {
         #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
           padding-top: 15px;
           padding-bottom: 21px; }
-  #main-block #welcome-block .block-about-us {
+  #main-block #welcome-block .wraper-block-about-us .block-about-us {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 5px; }
-    #main-block #welcome-block .block-about-us h2 {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us h2 {
       font-size: 24px;
       padding-bottom: 12px; }
-    #main-block #welcome-block .block-about-us p {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us p {
       padding-bottom: 20px; }
-    #main-block #welcome-block .block-about-us .about-us-video {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us .about-us-video {
       width: 100%;
       padding-bottom: 4px; }
-      #main-block #welcome-block .block-about-us .about-us-video video {
+      #main-block #welcome-block .wraper-block-about-us .block-about-us .about-us-video video {
         padding: 0 38px; }
-    #main-block #welcome-block .block-about-us hr {
+    #main-block #welcome-block .wraper-block-about-us .block-about-us hr {
       width: 80px;
       height: 1px; }
   #main-block #welcome-block .block-solution {
