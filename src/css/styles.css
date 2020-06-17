@@ -7744,7 +7744,7 @@ p {
   background-image: linear-gradient(269deg, #1c1c1c 0%, #2d2d2d 100%);
   display: flex;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   align-items: center; }
   #main-header #main-header-nav {
     padding: 0 24px;
@@ -7775,17 +7775,48 @@ p {
         color: #fff;
         text-decoration: none; }
       #main-header #main-header-nav #main-header-buttons .login-button {
-        height: 36px;
         margin-right: 9px;
-        background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+        position: relative;
+        background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
+        transition: .6s;
+        overflow: hidden; }
+        #main-header #main-header-nav #main-header-buttons .login-button:before {
+          content: '';
+          display: block;
+          position: absolute;
+          background: rgba(255, 255, 255, 0.5);
+          width: 80px;
+          height: 100%;
+          opacity: .5;
+          filter: blur(30px);
+          transform: translateX(-120px) skewX(-15deg); }
+        #main-header #main-header-nav #main-header-buttons .login-button:after {
+          content: '';
+          display: block;
+          position: absolute;
+          background: rgba(255, 255, 255, 0.2);
+          width: 50px;
+          height: 100%;
+          opacity: 0;
+          filter: blur(5px);
+          transform: translateX(-120px) skewX(-15deg); }
         #main-header #main-header-nav #main-header-buttons .login-button:hover {
-          background-image: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+          background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
+          cursor: pointer; }
+          #main-header #main-header-nav #main-header-buttons .login-button:hover:before {
+            transform: translateX(120px) skewX(-15deg);
+            opacity: 0.6;
+            transition: .7s; }
+          #main-header #main-header-nav #main-header-buttons .login-button:hover:after {
+            transform: translateX(120px) skewX(-15deg);
+            opacity: 1;
+            transition: .7s; }
       #main-header #main-header-nav #main-header-buttons .register-button {
         border: 1px solid #fff; }
         #main-header #main-header-nav #main-header-buttons .register-button:hover {
           color: #000;
           background-color: #fff;
-          border: 1px solid #000; }
+          border: 1px solid #fff; }
 
 .header {
   width: 100%;
@@ -7905,36 +7936,36 @@ p {
         filter: grayscale(1) opacity(0.2); }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-dashboards-section {
         position: absolute;
-        bottom: 46%;
-        right: 2%; }
+        bottom: 45%;
+        right: 3%; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-software-section {
         position: absolute;
-        bottom: 13%;
+        bottom: 11%;
         right: 13%; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-layout-section {
         position: absolute;
-        bottom: -1%;
+        bottom: -2%;
         right: 46%; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-features-section {
         position: absolute;
         bottom: 13%;
-        left: 13%; }
+        left: 14%; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-crypto-section {
         position: absolute;
         bottom: 48%;
         left: 2%; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-newsfeeds-section {
         position: absolute;
-        top: 7%;
-        left: 14%; }
+        top: 9%;
+        left: 13%; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-security-section {
         position: absolute;
-        top: -7%;
+        top: -4%;
         left: 46%; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-solution-section {
         position: absolute;
-        top: 7%;
-        right: 14%; }
+        top: 9%;
+        right: 15%; }
     #main-block #welcome-block .wraper-block-second .block-second .circle-logo {
       position: absolute;
       top: 50%;
@@ -7944,9 +7975,6 @@ p {
       height: 100%;
       max-width: 409px;
       max-height: 409px;
-      border: 1px solid #f3f3f3;
-      border-radius: 50%;
-      background-color: rgba(245, 245, 245, 0.4);
       text-align: center;
       display: flex;
       align-items: center;
@@ -8012,7 +8040,6 @@ p {
   #main-block #welcome-block .wraper-graphs .main-features-background {
     width: 100%;
     background: #fafafa;
-    margin-bottom: 115px;
     position: sticky;
     top: 65px;
     z-index: 1020; }
@@ -8039,6 +8066,7 @@ p {
     box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.07);
     background-color: #fefefe;
     padding: 33px;
+    margin-top: 115px;
     margin-bottom: 110px; }
     #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
       color: #dedede;
@@ -8100,7 +8128,7 @@ p {
 
 #main-block #welcome-block .wraper-block-customer {
   padding-top: 35px;
-  background: linear-gradient(to bottom, #f8f8f8 44%, #fff 0%); }
+  background: linear-gradient(to bottom, #f8f8f8 31%, #fff 0%); }
   #main-block #welcome-block .wraper-block-customer .block-customer {
     margin-bottom: 140px;
     height: 100%;
@@ -8354,6 +8382,11 @@ footer {
     #main-block #welcome-block .wraper-block-first .block-first .social {
       position: relative;
       padding-bottom: 20px; }
+  #main-block #welcome-block .wraper-block-second .block-second .circle-img .circle-items {
+    width: 39px; }
+  #main-block #welcome-block .wraper-block-second .block-second .circle-img #img-newsfeeds-section {
+    top: 11%;
+    left: 15%; }
   #main-block #welcome-block .wraper-block-second .block-second .circle-logo {
     width: 100%;
     height: 100%;
@@ -8516,10 +8549,9 @@ footer {
   #main-block #welcome-block .wraper-graphs {
     margin-bottom: 100px;
     background: none; }
-    #main-block #welcome-block .wraper-graphs .main-features-background {
-      margin-bottom: 55px; }
     #main-block #welcome-block .wraper-graphs .block-graphs {
       padding: 19px 19px 15px 19px;
+      margin-top: 55px;
       margin-bottom: 65px; }
       #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .number-block-graphs {
         font-size: 29px;
@@ -8553,6 +8585,20 @@ footer {
     #main-block #welcome-block .block-customer .customers-windows-description .customer-window {
       position: relative;
       overflow: hidden; }
+      #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background {
+        display: flex;
+        align-items: center; }
+        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background .window-background-description h5 {
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.56px;
+          line-height: 13px;
+          text-align: center; }
+        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background .window-background-description p {
+          margin-bottom: 0;
+          font-size: 7px;
+          font-weight: 400;
+          line-height: 12px; }
   #main-block #welcome-block .block-about-us {
     margin-bottom: 65px; }
     #main-block #welcome-block .block-about-us h2 {
@@ -8584,6 +8630,8 @@ footer {
   #main-block #welcome-block .block-partners {
     padding-top: 70px;
     padding-bottom: 80px; }
+    #main-block #welcome-block .block-partners p {
+      line-height: 18px; }
     #main-block #welcome-block .block-partners h2 {
       padding-bottom: 70px; }
     #main-block #welcome-block .block-partners img {
@@ -8604,7 +8652,9 @@ footer {
       #main-block #welcome-block .block-partners .partner-section-input .input-group .input-group-append .btn-outline-secondary {
         background-color: #292929;
         border: 1px solid #292929;
-        font-size: 20px; } }
+        font-size: 20px; }
+  footer p {
+    line-height: 18px; } }
 
 @media (max-width: 767px) {
   h1 {
@@ -8696,10 +8746,12 @@ footer {
         text-transform: uppercase;
         padding-bottom: 20px;
         text-align: right;
-        overflow: hidden; }
+        overflow: hidden;
+        font-size: 14px; }
         #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .register-link img {
           width: 14px;
-          padding-bottom: 3px; }
+          padding-bottom: 3px;
+          padding-left: 3px; }
         #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description .register-link:before {
           content: '';
           display: inline-block;
@@ -8734,49 +8786,57 @@ footer {
           #main-block #welcome-block .wraper-graphs .block-graphs .graphs-description-reverse h2:after {
             margin-left: 25px;
             margin-right: -100%; }
-  #main-block #welcome-block .block-customer {
-    margin-bottom: 20px;
-    height: 100%;
-    box-shadow: none;
-    padding-left: 58px;
-    padding-right: 58px;
-    padding-bottom: 0px; }
-    #main-block #welcome-block .block-customer .customers h3 {
-      text-align: center; }
-      #main-block #welcome-block .block-customer .customers h3:after {
-        content: '';
+  #main-block #welcome-block .wraper-block-customer {
+    background: none;
+    padding-top: 0;
+    background: linear-gradient(to bottom, #f8f8f8 83px, #fff 0%); }
+    #main-block #welcome-block .wraper-block-customer .block-customer {
+      margin-bottom: 20px;
+      height: 100%;
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0);
+      padding-left: 58px;
+      padding-right: 58px;
+      padding-bottom: 0px;
+      padding-top: 30px;
+      box-shadow: none; }
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers h3 {
+        text-align: center;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        padding-top: 0; }
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers h3:after {
+          content: '';
+          display: none; }
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers h2 {
         display: none; }
-    #main-block #welcome-block .block-customer .customers h2 {
-      display: none; }
-    #main-block #welcome-block .block-customer lottie-player {
-      display: none; }
-    #main-block #welcome-block .block-customer hr {
-      display: none; }
-    #main-block #welcome-block .block-customer .customers-windows-description h4 {
-      color: #292929;
-      text-align: center;
-      font-weight: 700;
-      line-height: 30px;
-      text-transform: uppercase; }
-    #main-block #welcome-block .block-customer .customers-windows-description .customer-window {
-      margin-top: 13px;
-      position: relative;
-      overflow: hidden; }
-      #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background {
+      #main-block #welcome-block .wraper-block-customer .block-customer lottie-player {
         display: none; }
-        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
+      #main-block #welcome-block .wraper-block-customer .block-customer hr {
+        display: none; }
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description h4 {
+        color: #292929;
+        text-align: center;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase; }
+      #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window {
+        margin-top: 13px;
+        position: relative;
+        overflow: hidden; }
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background h5 {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.56px;
           line-height: 19px;
           text-align: center; }
-        #main-block #welcome-block .block-customer .customers-windows-description .customer-window .customer-window-background p {
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window .customer-window-background p {
           font-size: 12px;
           font-weight: 400;
           line-height: 25px; }
-      #main-block #welcome-block .block-customer .customers-windows-description .customer-window img {
-        padding-top: 15px;
-        padding-bottom: 21px; }
+        #main-block #welcome-block .wraper-block-customer .block-customer .customers-windows-description .customer-window img {
+          padding-top: 15px;
+          padding-bottom: 21px; }
   #main-block #welcome-block .block-about-us {
     padding-left: 20px;
     padding-right: 20px;
