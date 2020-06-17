@@ -1,11 +1,10 @@
 const circle_items = $('.circle-items');
 const description_info = $('.description-info');
-let circle_animation_interval = 7000;
+let circle_animation_interval = 6000;
 let current_circle_element = 1;
-var animation_iteration = 0;
-var is_interval_set = false;
-var circle_loop = null;
-var jump_after_out = 1;
+let animation_iteration = 0;
+let is_interval_set = false;
+let circle_loop = null;
 
 function circle_animation() {
     if (animation_iteration > 0) {
@@ -66,11 +65,8 @@ circle_items.each(function (item) {
         if (!is_interval_set) {
             circle_loop = setInterval(circle_animation, circle_animation_interval);
             is_interval_set = true;
-            let nextElement = $(circle_items).index($(this)) + jump_after_out < circle_items.length ? $(circle_items).index($(this)) + jump_after_out : 0;
-            highlightElement($(circle_items[nextElement]));
-            showDependingElement($(circle_items[nextElement]));
+            current_circle_element = $(circle_items).index($(this)) +1
         }
-        unHighlightElement($(this));
     })
 })
 
