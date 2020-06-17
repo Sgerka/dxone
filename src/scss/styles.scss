@@ -79,6 +79,9 @@ p {
                 width: 122px;
                 color: #fff;
                 text-transform: uppercase;
+                transition: .5s;
+                overflow: hidden;
+                position: relative;
             }
             a:hover {
                 color: #fff;
@@ -86,10 +89,13 @@ p {
             }
             .login-button {
                 margin-right: 9px;
-                position: relative;
                 background: $main-button-color;
-                transition: .6s;
-                overflow: hidden;
+                &:hover {
+                    background: $hover-button-color;
+                }
+            }
+            .register-button {
+                border: 1px solid #fff;
                 &:before {
                     content: '';
                     display: block;
@@ -114,6 +120,8 @@ p {
                 }
                 &:hover {
                     cursor: pointer;
+                    background: #fff;
+                    color: #000;
                     &:before {
                         transform: translateX(100px) skewX(-15deg);
                         opacity: 0.6;
@@ -124,14 +132,6 @@ p {
                         opacity: 1;
                         transition: .7s;
                     }
-                }
-            }
-            .register-button {
-                border: 1px solid #fff;
-                &:hover {
-                    color: #000;
-                    background-color: #fff;
-                    border: 1px solid #fff;
                 }
             }
         }
@@ -211,17 +211,55 @@ p {
                         color: #fff;
                         margin-right: 9px;
                         background-image: $main-button-color;
+                        position: relative;
+                        transition: .5s;
+                        overflow: hidden;
                         &:hover {
-                            background-image: $hover-button-color;
+                            background: $hover-button-color;
                         }
                     }
                     .watch-video-button {
                         color: #252525;
                         border: 1px solid #252525;
+                        position: relative;
+                        transition: .6s;
+                        overflow: hidden;
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            background: rgba(255, 255, 255, 0.5);
+                            width: 30px;
+                            height: 100%;
+                            opacity: .5;
+                            filter: blur(30px);
+                            transform: translateX(-210px) skewX(-15deg);
+                        }
+                        &:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            background: rgba(255, 255, 255, 0.2);
+                            width: 50px;
+                            height: 100%;
+                            opacity: 0;
+                            filter: blur(5px);
+                            transform: translateX(-210px) skewX(-15deg);
+                        }
                         &:hover {
+                            cursor: pointer;
+                            background: #000;
                             color: #fff;
-                            background-color: #252525;
-                            border: 1px solid #fff;
+                            &:before {
+                                transform: translateX(200px) skewX(-15deg);
+                                opacity: 0.6;
+                                transition: .7s;
+                            }
+                            &:after {
+                                transform: translateX(200px) skewX(-15deg);
+                                opacity: 1;
+                                transition: .7s;
+                            }
                         }
                     }
                 }
@@ -253,6 +291,7 @@ p {
                     }
                     .social-dark-links {
                         padding-right: 15px;
+                        text-decoration: none;
                         img {
                             width: 29px;
                         }
@@ -353,7 +392,7 @@ p {
                     padding-left: 30px;
                     h3 {
                         padding-top: 3px;
-                        padding-bottom: 40px;
+                        padding-bottom: 80px;
                         text-transform: uppercase;
                         text-align: right;
                         overflow: hidden;
@@ -708,9 +747,6 @@ p {
                                 background-image: $hover-button-color;
                             }
                         }
-                        a:hover {
-                            text-decoration: none;
-                        }
                     }
                 }
             }
@@ -779,6 +815,7 @@ footer {
     .social-footer {
         .social-light-links {
             padding-right: 5px;
+            text-decoration: none;
             img {
                 width: 29px;
                 filter: invert(1);
@@ -1132,28 +1169,28 @@ footer {
                         max-width: 200px;
                         max-height: 200px;
                         img {
-                            max-width: 80px;
-                            padding-bottom: 15px;
+                            max-width: 100px;
+                            padding-bottom: 20px;
                         }
                         span {
-                            max-width: 130px;
-                            font-size: 12px;
+                            max-width: 170px;
+                            font-size: 16px;
                             font-weight: 600;
                             letter-spacing: 0.63px;
-                            line-height: 18px;
+                            line-height: 23px;
                         }
                     }
-                }
-                .description {
-                    h3 {
-                        padding-bottom: 25px;
-                        font-size: 22px;
-                    }
-                    .description-info {
-                        p {
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 25px;
+                    .description {
+                        h3 {
+                            padding-bottom: 25px;
+                            font-size: 22px;
+                        }
+                        .description-info {
+                            p {
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 25px;
+                            }
                         }
                     }
                 }

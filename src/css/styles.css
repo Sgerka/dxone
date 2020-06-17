@@ -7770,17 +7770,21 @@ p {
         height: 34px;
         width: 122px;
         color: #fff;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: .5s;
+        overflow: hidden;
+        position: relative; }
       #main-header #main-header-nav #main-header-buttons a:hover {
         color: #fff;
         text-decoration: none; }
       #main-header #main-header-nav #main-header-buttons .login-button {
         margin-right: 9px;
-        position: relative;
-        background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
-        transition: .6s;
-        overflow: hidden; }
-        #main-header #main-header-nav #main-header-buttons .login-button:before {
+        background: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+        #main-header #main-header-nav #main-header-buttons .login-button:hover {
+          background: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+      #main-header #main-header-nav #main-header-buttons .register-button {
+        border: 1px solid #fff; }
+        #main-header #main-header-nav #main-header-buttons .register-button:before {
           content: '';
           display: block;
           position: absolute;
@@ -7790,7 +7794,7 @@ p {
           opacity: .5;
           filter: blur(30px);
           transform: translateX(-110px) skewX(-15deg); }
-        #main-header #main-header-nav #main-header-buttons .login-button:after {
+        #main-header #main-header-nav #main-header-buttons .register-button:after {
           content: '';
           display: block;
           position: absolute;
@@ -7800,22 +7804,18 @@ p {
           opacity: 0;
           filter: blur(5px);
           transform: translateX(-110px) skewX(-15deg); }
-        #main-header #main-header-nav #main-header-buttons .login-button:hover {
-          cursor: pointer; }
-          #main-header #main-header-nav #main-header-buttons .login-button:hover:before {
+        #main-header #main-header-nav #main-header-buttons .register-button:hover {
+          cursor: pointer;
+          background: #fff;
+          color: #000; }
+          #main-header #main-header-nav #main-header-buttons .register-button:hover:before {
             transform: translateX(100px) skewX(-15deg);
             opacity: 0.6;
             transition: .7s; }
-          #main-header #main-header-nav #main-header-buttons .login-button:hover:after {
+          #main-header #main-header-nav #main-header-buttons .register-button:hover:after {
             transform: translateX(100px) skewX(-15deg);
             opacity: 1;
             transition: .7s; }
-      #main-header #main-header-nav #main-header-buttons .register-button {
-        border: 1px solid #fff; }
-        #main-header #main-header-nav #main-header-buttons .register-button:hover {
-          color: #000;
-          background-color: #fff;
-          border: 1px solid #fff; }
 
 .header {
   width: 100%;
@@ -7880,16 +7880,50 @@ p {
       #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .get-started-button {
         color: #fff;
         margin-right: 9px;
-        background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+        background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
+        position: relative;
+        transition: .5s;
+        overflow: hidden; }
         #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .get-started-button:hover {
-          background-image: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
+          background: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
       #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button {
         color: #252525;
-        border: 1px solid #252525; }
+        border: 1px solid #252525;
+        position: relative;
+        transition: .6s;
+        overflow: hidden; }
+        #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button:before {
+          content: '';
+          display: block;
+          position: absolute;
+          background: rgba(255, 255, 255, 0.5);
+          width: 30px;
+          height: 100%;
+          opacity: .5;
+          filter: blur(30px);
+          transform: translateX(-210px) skewX(-15deg); }
+        #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button:after {
+          content: '';
+          display: block;
+          position: absolute;
+          background: rgba(255, 255, 255, 0.2);
+          width: 50px;
+          height: 100%;
+          opacity: 0;
+          filter: blur(5px);
+          transform: translateX(-210px) skewX(-15deg); }
         #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button:hover {
-          color: #fff;
-          background-color: #252525;
-          border: 1px solid #fff; }
+          cursor: pointer;
+          background: #000;
+          color: #fff; }
+          #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button:hover:before {
+            transform: translateX(200px) skewX(-15deg);
+            opacity: 0.6;
+            transition: .7s; }
+          #main-block #welcome-block .wraper-block-first .block-first #welcome-buttons .watch-video-button:hover:after {
+            transform: translateX(200px) skewX(-15deg);
+            opacity: 1;
+            transition: .7s; }
     #main-block #welcome-block .wraper-block-first .block-first h1 {
       max-width: 450px;
       font-weight: 700;
@@ -7914,7 +7948,8 @@ p {
         background-image: linear-gradient(to right, #f16a46 0%, #ed337c 50%, #8e489b 100%);
         margin-left: -100%; }
       #main-block #welcome-block .wraper-block-first .block-first .social .social-dark-links {
-        padding-right: 15px; }
+        padding-right: 15px;
+        text-decoration: none; }
         #main-block #welcome-block .wraper-block-first .block-first .social .social-dark-links img {
           width: 29px; }
 
@@ -7994,7 +8029,7 @@ p {
       padding-left: 30px; }
       #main-block #welcome-block .wraper-block-second .block-second .description h3 {
         padding-top: 3px;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
         text-transform: uppercase;
         text-align: right;
         overflow: hidden; }
@@ -8276,8 +8311,6 @@ p {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
           #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button .feedback-button:hover {
             background-image: linear-gradient(to left, #f16a46 0%, #ed337c 50%, #8e489b 100%); }
-        #main-block #welcome-block .wraper-block-feedback .block-feedback .feedback-description #feedback-button a:hover {
-          text-decoration: none; }
 
 #main-block #welcome-block .block-partners {
   padding-top: 100px;
@@ -8326,7 +8359,8 @@ footer {
     footer .footer-menu-link:hover {
       text-decoration: none; }
   footer .social-footer .social-light-links {
-    padding-right: 5px; }
+    padding-right: 5px;
+    text-decoration: none; }
     footer .social-footer .social-light-links img {
       width: 29px;
       filter: invert(1); }
@@ -8538,21 +8572,21 @@ footer {
       max-width: 200px;
       max-height: 200px; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-logo img {
-        max-width: 80px;
-        padding-bottom: 15px; }
+        max-width: 100px;
+        padding-bottom: 20px; }
       #main-block #welcome-block .wraper-block-second .block-second .circle-logo span {
-        max-width: 130px;
-        font-size: 12px;
+        max-width: 170px;
+        font-size: 16px;
         font-weight: 600;
         letter-spacing: 0.63px;
-        line-height: 18px; }
-  #main-block #welcome-block .wraper-block-second .description h3 {
-    padding-bottom: 25px;
-    font-size: 22px; }
-  #main-block #welcome-block .wraper-block-second .description .description-info p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px; }
+        line-height: 23px; }
+    #main-block #welcome-block .wraper-block-second .block-second .description h3 {
+      padding-bottom: 25px;
+      font-size: 22px; }
+    #main-block #welcome-block .wraper-block-second .block-second .description .description-info p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px; }
   #main-block #welcome-block .wraper-graphs {
     margin-bottom: 100px;
     background: none; }
