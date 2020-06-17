@@ -90,9 +90,6 @@ p {
                 background: $main-button-color;
                 transition: .6s;
                 overflow: hidden;
-                // &:hover {
-                //     background-image: $hover-button-color;
-                // }
                 &:before {
                     content: '';
                     display: block;
@@ -109,7 +106,7 @@ p {
                     display: block;
                     position: absolute;
                     background: rgba(255, 255, 255, 0.2);
-                    width: 50px;
+                    width: 80px;
                     height: 100%;
                     opacity: 0;
                     filter: blur(5px);
@@ -1350,6 +1347,9 @@ footer {
     #main-header {
         #main-header-nav {
             #main-header-buttons {
+                .login-button {
+                    margin-right: 0;
+                }
                 .register-button {
                     display: none;
                 }

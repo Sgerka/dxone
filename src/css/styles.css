@@ -7795,7 +7795,7 @@ p {
           display: block;
           position: absolute;
           background: rgba(255, 255, 255, 0.2);
-          width: 50px;
+          width: 80px;
           height: 100%;
           opacity: 0;
           filter: blur(5px);
@@ -8674,6 +8674,8 @@ footer {
   p {
     font-size: 12px;
     text-align: justify; }
+  #main-header #main-header-nav #main-header-buttons .login-button {
+    margin-right: 0; }
   #main-header #main-header-nav #main-header-buttons .register-button {
     display: none; }
   #main-block #welcome-block .wraper-block-first {
