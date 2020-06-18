@@ -90,8 +90,21 @@ p {
             .login-button {
                 margin-right: 9px;
                 background: $main-button-color;
-                &:hover {
+                z-index: 1;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
                     background: $hover-button-color;
+                    z-index: -1;
+                    transition: opacity 0.3s linear;
+                    opacity: 0;
+                }
+                &:hover:before {
+                    opacity: 1;
                 }
             }
             .register-button {
@@ -212,10 +225,21 @@ p {
                         margin-right: 9px;
                         background-image: $main-button-color;
                         position: relative;
-                        transition: .5s;
-                        overflow: hidden;
-                        &:hover {
+                        z-index: 1;
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
                             background: $hover-button-color;
+                            z-index: -1;
+                            transition: opacity 0.3s linear;
+                            opacity: 0;
+                        }
+                        &:hover:before {
+                            opacity: 1;
                         }
                     }
                     .watch-video-button {
@@ -743,8 +767,22 @@ p {
                             color: #fff;
                             background-image: $main-button-color;
                             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-                            &:hover {
-                                background-image: $hover-button-color;
+                            position: relative;
+                            z-index: 1;
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                background: $hover-button-color;
+                                z-index: -1;
+                                transition: opacity 0.3s linear;
+                                opacity: 0;
+                            }
+                            &:hover:before {
+                                opacity: 1;
                             }
                         }
                     }
@@ -1611,6 +1649,7 @@ footer {
                             overflow: hidden;
                             .customer-window-background {
                                 h5 {
+                                    padding: 0 20px;
                                     font-size: 14px;
                                     font-weight: 700;
                                     letter-spacing: 0.56px;
@@ -1620,7 +1659,7 @@ footer {
                                 p {
                                     font-size: 12px;
                                     font-weight: 400;
-                                    line-height: 25px;
+                                    line-height: 17px;
                                 }
                             }
                             img {
@@ -1682,6 +1721,7 @@ footer {
                         text-align: justify;
                         h2 {
                             font-size: 17px;
+                            padding-top: 12px;
                             padding-bottom: 20px;
                             text-align: center;
                             font-weight: 700;
